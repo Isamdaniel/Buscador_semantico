@@ -1,0 +1,74 @@
+[
+  {
+    "pregunta": "¿Cuál es la eficiencia típica de los paneles solares fotovoltaicos modernos?",
+    "respuesta": "Los paneles solares fotovoltaicos actuales alcanzan eficiencias entre 18-22% en aplicaciones comerciales, mientras que prototipos de laboratorio superan el 47% utilizando células multijuntura. La eficiencia depende de la tecnología empleada: silicio monocristalino (20-22%), policristalino (15-18%) y películas delgadas (10-15%). Factores como temperatura, irradiancia solar, ángulo de incidencia y sombreado afectan significativamente el rendimiento. Las pérdidas sistemáticas incluyen reflexión superficial, recombinación de portadores y resistencia serie. Optimizaciones mediante estructuras textrizadas, pasivación de contactos traseros y tecnología PERC mejoran progresivamente la conversión energética, acercándose al límite teórico de Shockley-Queisser.",
+    "id": "solar_000",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es el efecto fotovoltaico y cómo genera electricidad?",
+    "respuesta": "El efecto fotovoltaico es el fenómeno físico mediante el cual fotones transfieren energía a electrones en una estructura semiconductor, generando corriente eléctrica. Cuando la radiación solar incide en una célula fotovoltaica con unión p-n, los fotones excitan electrones del material base a la banda de conducción. El campo eléctrico de la unión separa portadores de carga: electrones hacia la región n y huecos hacia la p. Este flujo de portadores crea diferencia de potencial (voltaje de circuito abierto) y corriente (corriente de cortocircuito). El circuito externo conectado extrae esta corriente continua, que mediante inversores se convierte en alterna para aplicaciones domésticas e industriales.",
+    "id": "solar_001",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las ventajas principales de la energía solar fotovoltaica?",
+    "respuesta": "La energía solar fotovoltaica presenta múltiples ventajas: generación descentralizada sin emisiones de CO₂, mantenimiento mínimo y costos operativos reducidos tras la inversión inicial. Ofrece escalabilidad desde sistemas residenciales hasta plantas utilitarias de cientos de megavatios. Proporciona independencia energética y protección contra volatilidad de precios de combustibles fósiles. Tecnología modular adaptable a diferentes geografías con insolación aprovechable. Genera empleo local en instalación y mantenimiento. Posee vida útil de 25-30 años con degradación anual inferior a 0.8%. Integración con almacenamiento en baterías mejora confiabilidad. Requisitos regulatorios y de seguridad bien establecidos garantizan operación confiable.",
+    "id": "solar_002",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los principales desafíos de la energía solar?",
+    "respuesta": "Los desafíos principales de la energía solar incluyen variabilidad por condiciones meteorológicas y ciclo día-noche, requiriendo sistemas de almacenamiento costosos. La intermitencia limita penetración en redes eléctricas sin infraestructura flexible. Costo inicial elevado, aunque decreciente, limita acceso en economías emergentes. Fabricación de células requiere energía significativa y uso de materiales tóxicos. Degradación de módulos y gestión de residuos plantean preocupaciones ambientales. Impacto visual y territorial en grandes proyectos genera oposición social. Reciclaje aún subdesarrollado para paneles al final de vida útil. Dependencia de cadenas suministro globales vulnerables. Requiere inversión considerable en redes inteligentes y tecnologías de respuesta a demanda para integración óptima.",
+    "id": "solar_003",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué son los inversores solares y cuál es su función?",
+    "respuesta": "Los inversores solares son dispositivos electrónicos esenciales que convierten corriente continua (CC) generada por paneles fotovoltaicos en corriente alterna (CA) compatible con redes eléctricas e instalaciones residenciales. Tipos principales incluyen inversores de cadena (una entrada), microinversores (por panel) e inversores centrales (múltiples entradas). Funciones incluyen seguimiento del punto de máxima potencia (MPPT), inyección sincronizada a red, protecciones anti-islanding, monitoreo y registro de datos. Eficiencias típicas alcanzan 95-98%. Inversores híbridos integran almacenamiento en baterías. Parámetros críticos incluyen voltaje máximo entrada, potencia nominal, factor de potencia y distorsión armónica total. Selección depende de configuración sistema, topología red y requisitos regulatorios locales.",
+    "id": "solar_004",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo funcionan los sistemas solares conectados a red?",
+    "respuesta": "Los sistemas solares conectados a red (grid-tied) inyectan electricidad directamente a la red pública, eliminando necesidad de baterías costosas. El inversor sincroniza voltaje y frecuencia de salida con parámetros de red (50/60 Hz según región). Cuando generación solar excede consumo, energía excedente se exporta a la red recibiendo compensación mediante net metering o feed-in tariffs. En períodos nocturnos, el consumidor adquiere energía de red convencionalmente. Protecciones Anti-Islanding desconectan automáticamente sistema si falla red, previniendo peligros. Monitoreo inteligente optimiza flujos energéticos. Ventajas incluyen máxima rentabilidad, sin inversión en almacenamiento, y capacidad de compensar en tiempo real. Regulaciones varían significativamente según jurisdicción, afectando viabilidad económica.",
+    "id": "solar_005",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las tecnologías emergentes en energía solar?",
+    "respuesta": "Las tecnologías solares emergentes prometen eficiencias superiores y menor costo. Células de perovskita alcanzan eficiencias laboratorio de 29%, con potencial comercial hacia 2025-2027, ofreciendo procesos manufactureros más simples y económicos. Solar de película delgada multijuntura logra >47% en concentradores. Células bifaciales capturan radiación trasera, incrementando rendimiento 5-15%. Integración de paneles en edificios (BIPV) crea superficies multifuncionales. Solar térmica concentrada (CSP) con almacenamiento térmico proporciona generación dispatchable. Dispositivos fotosintéticos artificiales convierten CO₂ en combustibles. Células tandem híbridas combinan tecnologías. Sistemas de seguimiento dual-axis optimizan captación. Nanomateriales y dopajes mejoran conversión. Investigación en óxidos de metal-haluro y células cuánticas continúa avanzando hacia comercialización viabilidad económica.",
+    "id": "solar_006",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es la degradación de módulos solares y cómo se mitiga?",
+    "respuesta": "La degradación de módulos solares es la pérdida gradual de eficiencia durante operación, aproximadamente 0.5-0.8% anualmente. Causas incluyen decoloración del encapsulante EVA, corrosión de contactos metálicos por humedad, microfisuración de silicio por estrés térmico, y delaminación. Factores ambientales como ciclos temperatura, radiación UV y humedad aceleran procesos degradativos. Mitigation strategies incluyen uso de encapsulantes avanzados resistentes UV, estructuras de barrera de permeabilidad mejorada, dopajes que suprimen defectos, y coatings protectores. Mantenimiento preventivo mediante limpieza periódica, inspección termográfica detecta módulos defectuosos. Selección de fabricantes con certificaciones IEC 61215 asegura calidad. Garantías de rendimiento cubren degradación acelerada. Monitoreo continuo mediante sistemas SCADA identifica problemas tempranamente, maximizando vida útil efectiva.",
+    "id": "solar_007",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo impacta la temperatura en el rendimiento de paneles solares?",
+    "respuesta": "La temperatura afecta significativamente el rendimiento de paneles solares mediante el coeficiente de temperatura, típicamente -0.4 a -0.5% por °C para células silicio. Incrementos térmicos reducen voltaje de circuito abierto (Voc) principalmente, mientras corriente de cortocircuito aumenta ligeramente. Paneles operan a temperaturas 20-30°C superiores a ambiente (NOCT: condiciones nominal operación célula), requiriendo consideración en diseño. Optimización incluye ventilación trasera para disipar calor, estructuras con espacios de aire, y materiales de baja emitancia. Concentradores solares con refrigeración activa mantienen temperaturas bajas. Paneles bifaciales aprovechan radiación trasera con menor calentamiento relativo. Modelado de pérdidas térmicas mediante software energético predice rendimiento anual considerando microclimas locales. En climas cálidos, seleccionar paneles con menores coeficientes temperatura maximiza producción anual efectiva.",
+    "id": "solar_008",
+    "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  }
+]
