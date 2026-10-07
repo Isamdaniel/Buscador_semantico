@@ -46,7 +46,8 @@ def documentos(categorias:list[str]) ->  tuple[list[dict], list[dict]] :
 
     return lista_dic, lista_errores
 
-corpus,errores=documentos(["solar"])
+categorias = ["solar", "eolica", "hidraulica", "almacenamiento", "redes_electricas", "petroleo_gas", "transicion_energetica", "industria_eficiencia"]
+corpus,errores=documentos(categorias)
 
 with open("data/documentos.json", "w", encoding="utf-8") as el_archivo:
         json.dump(corpus, el_archivo, ensure_ascii=False, indent=2)

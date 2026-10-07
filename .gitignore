@@ -1,0 +1,36 @@
+# Variables de entorno (API keys)
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+venv/
+env/
+.venv/
+
+# Datos generados (no versionados)
+data/documentos.json
+data/errores_generacion.json
+data/preguntas_prueba.json
+
+# Chroma (base de datos vectorial local)
+chroma_db/
+.chroma/
+
+# Caché de embeddings
+cache_embeddings/
+*.cache
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/

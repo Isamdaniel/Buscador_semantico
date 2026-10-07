@@ -1,73 +1,577 @@
 [
   {
-    "pregunta": "¿Cuál es la eficiencia típica de los paneles solares fotovoltaicos modernos?",
-    "respuesta": "Los paneles solares fotovoltaicos actuales alcanzan eficiencias entre 18-22% en aplicaciones comerciales, mientras que prototipos de laboratorio superan el 47% utilizando células multijuntura. La eficiencia depende de la tecnología empleada: silicio monocristalino (20-22%), policristalino (15-18%) y películas delgadas (10-15%). Factores como temperatura, irradiancia solar, ángulo de incidencia y sombreado afectan significativamente el rendimiento. Las pérdidas sistemáticas incluyen reflexión superficial, recombinación de portadores y resistencia serie. Optimizaciones mediante estructuras textrizadas, pasivación de contactos traseros y tecnología PERC mejoran progresivamente la conversión energética, acercándose al límite teórico de Shockley-Queisser.",
+    "pregunta": "¿Cuál es la tecnología fotovoltaica más eficiente actualmente?",
+    "respuesta": "Las celdas de silicio monocristalino alcanzan eficiencias del 22-23%, mientras que las tecnologías emergentes como perovskitas y células tándem superan el 30%. Los paneles comerciales típicos operan entre 18-21% de rendimiento. La eficiencia depende de factores como irradiancia solar, temperatura de operación y ángulo de incidencia. Los sistemas de seguimiento solar (trackers) optimizan la captación hasta 25-35% adicional comparado con estructuras fijas, mejorando significativamente el retorno de inversión en proyectos de gran escala.",
     "id": "solar_000",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Qué es el efecto fotovoltaico y cómo genera electricidad?",
-    "respuesta": "El efecto fotovoltaico es el fenómeno físico mediante el cual fotones transfieren energía a electrones en una estructura semiconductor, generando corriente eléctrica. Cuando la radiación solar incide en una célula fotovoltaica con unión p-n, los fotones excitan electrones del material base a la banda de conducción. El campo eléctrico de la unión separa portadores de carga: electrones hacia la región n y huecos hacia la p. Este flujo de portadores crea diferencia de potencial (voltaje de circuito abierto) y corriente (corriente de cortocircuito). El circuito externo conectado extrae esta corriente continua, que mediante inversores se convierte en alterna para aplicaciones domésticas e industriales.",
+    "pregunta": "¿Cómo funciona un inversor solar trifásico?",
+    "respuesta": "El inversor trifásico convierte la corriente continua (DC) generada por paneles fotovoltaicos en corriente alterna trifásica (AC) compatible con redes de distribución. Utiliza semiconductores IGBT y topologías de puente completo para sintetizar tres ondas sinusoidales desfasadas 120°. Incorpora control MPPT (Maximum Power Point Tracking) para optimizar la potencia extraída. Estos dispositivos operan con eficiencias del 97-99%, regulan voltaje y frecuencia, e incluyen protecciones contra islanding, cortocircuitos y armónicos de acuerdo a normativas IEC 61727 y IEEE 1547.",
     "id": "solar_001",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Cuáles son las ventajas principales de la energía solar fotovoltaica?",
-    "respuesta": "La energía solar fotovoltaica presenta múltiples ventajas: generación descentralizada sin emisiones de CO₂, mantenimiento mínimo y costos operativos reducidos tras la inversión inicial. Ofrece escalabilidad desde sistemas residenciales hasta plantas utilitarias de cientos de megavatios. Proporciona independencia energética y protección contra volatilidad de precios de combustibles fósiles. Tecnología modular adaptable a diferentes geografías con insolación aprovechable. Genera empleo local en instalación y mantenimiento. Posee vida útil de 25-30 años con degradación anual inferior a 0.8%. Integración con almacenamiento en baterías mejora confiabilidad. Requisitos regulatorios y de seguridad bien establecidos garantizan operación confiable.",
+    "pregunta": "¿Qué es el almacenamiento con baterías de iones de litio?",
+    "respuesta": "Los sistemas de almacenamiento en baterías de iones de litio (LIB) capturan energía solar mediante celdas electroquímicas recargables. Utilizan cátodos de óxidos de litio-metal (NCA, NMC, LFP) y ánodos de grafito. Ofrecen densidades energéticas de 150-250 Wh/kg, ciclos de vida de 8,000-10,000 ciclos y eficiencia de ida-vuelta del 90-95%. Son esenciales en sistemas aislados y plantas de respaldo. Los sistemas de gestión térmica y BMS (Battery Management System) aseguran seguridad, longevidad y balance celular en configuraciones modulares escalables.",
     "id": "solar_002",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Cuáles son los principales desafíos de la energía solar?",
-    "respuesta": "Los desafíos principales de la energía solar incluyen variabilidad por condiciones meteorológicas y ciclo día-noche, requiriendo sistemas de almacenamiento costosos. La intermitencia limita penetración en redes eléctricas sin infraestructura flexible. Costo inicial elevado, aunque decreciente, limita acceso en economías emergentes. Fabricación de células requiere energía significativa y uso de materiales tóxicos. Degradación de módulos y gestión de residuos plantean preocupaciones ambientales. Impacto visual y territorial en grandes proyectos genera oposición social. Reciclaje aún subdesarrollado para paneles al final de vida útil. Dependencia de cadenas suministro globales vulnerables. Requiere inversión considerable en redes inteligentes y tecnologías de respuesta a demanda para integración óptima.",
+    "pregunta": "¿Cuál es la vida útil de los paneles solares fotovoltaicos?",
+    "respuesta": "Los paneles solares modernos tienen garantía de rendimiento de 25-30 años, con degradación típica del 0.5-0.8% anual. Después de 25 años mantienen 80-85% de capacidad nominal. La vida útil técnica puede extenderse a 40-50 años con mantenimiento preventivo. Factores que afectan longevidad incluyen radiación ultravioleta, ciclos térmicos, humedad y calidad de encapsulantes. Los estándares IEC 61215 y 61730 regulan resistencia a degradación, delaminación y corrosión. Al final de vida, estos módulos son reciclables en 95%, recuperando silicio, vidrio y metales preciosos.",
     "id": "solar_003",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Qué son los inversores solares y cuál es su función?",
-    "respuesta": "Los inversores solares son dispositivos electrónicos esenciales que convierten corriente continua (CC) generada por paneles fotovoltaicos en corriente alterna (CA) compatible con redes eléctricas e instalaciones residenciales. Tipos principales incluyen inversores de cadena (una entrada), microinversores (por panel) e inversores centrales (múltiples entradas). Funciones incluyen seguimiento del punto de máxima potencia (MPPT), inyección sincronizada a red, protecciones anti-islanding, monitoreo y registro de datos. Eficiencias típicas alcanzan 95-98%. Inversores híbridos integran almacenamiento en baterías. Parámetros críticos incluyen voltaje máximo entrada, potencia nominal, factor de potencia y distorsión armónica total. Selección depende de configuración sistema, topología red y requisitos regulatorios locales.",
+    "pregunta": "¿Qué ventajas ofrece la energía solar en zonas rurales?",
+    "respuesta": "La energía solar proporciona autonomía energética descentralizada en comunidades rurales sin acceso a infraestructura de red. Los sistemas fotovoltaicos aislados (off-grid) minimizan costos de distribución versus plantas convencionales. Facilitan electrificación de viviendas, sistemas de riego, purificación de agua y telecomunicaciones. Reducen emisiones de carbono versus generadores diésel. Combinados con baterías, garantizan suministro nocturno y durante períodos nublados. Requieren inversión inicial moderada con operación de bajo mantenimiento. Programas de microcrédito y subsidios gubernamentales mejoran accesibilidad económica en regiones emergentes.",
     "id": "solar_004",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Cómo funcionan los sistemas solares conectados a red?",
-    "respuesta": "Los sistemas solares conectados a red (grid-tied) inyectan electricidad directamente a la red pública, eliminando necesidad de baterías costosas. El inversor sincroniza voltaje y frecuencia de salida con parámetros de red (50/60 Hz según región). Cuando generación solar excede consumo, energía excedente se exporta a la red recibiendo compensación mediante net metering o feed-in tariffs. En períodos nocturnos, el consumidor adquiere energía de red convencionalmente. Protecciones Anti-Islanding desconectan automáticamente sistema si falla red, previniendo peligros. Monitoreo inteligente optimiza flujos energéticos. Ventajas incluyen máxima rentabilidad, sin inversión en almacenamiento, y capacidad de compensar en tiempo real. Regulaciones varían significativamente según jurisdicción, afectando viabilidad económica.",
+    "pregunta": "¿Cómo se calcula el potencial solar de una ubicación?",
+    "respuesta": "El potencial solar se evalúa mediante irradiancia global horizontal (GHI) y componentes difusa/directa. Se utilizan datos de satélites (PVGIS, NASA), estaciones meteorológicas y piranómetros de medición local. Se calcula la irradiación anual (kWh/m²) considerando latitud, longitud, altitud y ángulo de inclinación óptimo. Herramientas como PVWATTS y PVsyst modelan rendimiento anual, pérdidas por sombreamiento, temperatura y suciedad. La Razón de Rendimiento (PR) típica es 75-85%, integrando pérdidas de inversor, cableado y degradación. Análisis de sombreamiento mediante LiDAR identifica obstáculos que reducen generación.",
     "id": "solar_005",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Cuáles son las tecnologías emergentes en energía solar?",
-    "respuesta": "Las tecnologías solares emergentes prometen eficiencias superiores y menor costo. Células de perovskita alcanzan eficiencias laboratorio de 29%, con potencial comercial hacia 2025-2027, ofreciendo procesos manufactureros más simples y económicos. Solar de película delgada multijuntura logra >47% en concentradores. Células bifaciales capturan radiación trasera, incrementando rendimiento 5-15%. Integración de paneles en edificios (BIPV) crea superficies multifuncionales. Solar térmica concentrada (CSP) con almacenamiento térmico proporciona generación dispatchable. Dispositivos fotosintéticos artificiales convierten CO₂ en combustibles. Células tandem híbridas combinan tecnologías. Sistemas de seguimiento dual-axis optimizan captación. Nanomateriales y dopajes mejoran conversión. Investigación en óxidos de metal-haluro y células cuánticas continúa avanzando hacia comercialización viabilidad económica.",
+    "pregunta": "¿Cuáles son los marcos regulatorios para instalaciones solares?",
+    "respuesta": "La normativa internacional incluye IEC 61215 (desempeño módulos), IEC 61730 (seguridad), IEC 61721 (procedimientos test) e IEEE 1547 (interconexión a red). Regulaciones nacionales varían: la Unión Europea requiere certificación CE; Estados Unidos aplica NEC Artículo 690; México por NOM-001-SEDE. Sistemas conectados a red deben cumplir códigos de construcción, permisos eléctricos y ambientales. Subsidios y tarífas de inyección varían por país. La compensación neta (net metering) permite devolver excedentes. Requisitos de seguridad eléctrica, puesta a tierra y protecciones contra sobrevoltajes son obligatorios para interconexión segura.",
     "id": "solar_006",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Qué es la degradación de módulos solares y cómo se mitiga?",
-    "respuesta": "La degradación de módulos solares es la pérdida gradual de eficiencia durante operación, aproximadamente 0.5-0.8% anualmente. Causas incluyen decoloración del encapsulante EVA, corrosión de contactos metálicos por humedad, microfisuración de silicio por estrés térmico, y delaminación. Factores ambientales como ciclos temperatura, radiación UV y humedad aceleran procesos degradativos. Mitigation strategies incluyen uso de encapsulantes avanzados resistentes UV, estructuras de barrera de permeabilidad mejorada, dopajes que suprimen defectos, y coatings protectores. Mantenimiento preventivo mediante limpieza periódica, inspección termográfica detecta módulos defectuosos. Selección de fabricantes con certificaciones IEC 61215 asegura calidad. Garantías de rendimiento cubren degradación acelerada. Monitoreo continuo mediante sistemas SCADA identifica problemas tempranamente, maximizando vida útil efectiva.",
+    "pregunta": "¿Qué impacto ambiental tiene la manufactura de paneles solares?",
+    "respuesta": "La producción de paneles consume energía (típicamente 40-50 kWh/m²), generando huella de carbono recuperada en 1-4 años de operación. El procesamiento de silicio requiere alta temperatura, produciendo emisiones fugitivas. Se utilizan químicos como HF y NH₃ que necesitan tratamiento ambiental adecuado. El ciclo de vida completo (cradle-to-grave) presenta impacto ambiental mitigable mediante: energías renovables en manufactura, recuperación de agua de proceso, gestión de residuos y reciclaje de módulos. Iniciativas como la Responsabilidad Extendida del Productor (REP) establecen marcos para recolección, reciclaje y valorización de componentes al final de vida útil.",
     "id": "solar_007",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   },
   {
-    "pregunta": "¿Cómo impacta la temperatura en el rendimiento de paneles solares?",
-    "respuesta": "La temperatura afecta significativamente el rendimiento de paneles solares mediante el coeficiente de temperatura, típicamente -0.4 a -0.5% por °C para células silicio. Incrementos térmicos reducen voltaje de circuito abierto (Voc) principalmente, mientras corriente de cortocircuito aumenta ligeramente. Paneles operan a temperaturas 20-30°C superiores a ambiente (NOCT: condiciones nominal operación célula), requiriendo consideración en diseño. Optimización incluye ventilación trasera para disipar calor, estructuras con espacios de aire, y materiales de baja emitancia. Concentradores solares con refrigeración activa mantienen temperaturas bajas. Paneles bifaciales aprovechan radiación trasera con menor calentamiento relativo. Modelado de pérdidas térmicas mediante software energético predice rendimiento anual considerando microclimas locales. En climas cálidos, seleccionar paneles con menores coeficientes temperatura maximiza producción anual efectiva.",
+    "pregunta": "¿Cómo optimizar el rendimiento de una instalación fotovoltaica existente?",
+    "respuesta": "La optimización involucra: monitoreo continuo mediante dataloggers y plataformas IoT, identificación de underperformance mediante análisis comparativos de PR. Limpieza periódica de módulos mejora generación 5-10% en zonas polvorientas. Actualización de inversores incrementa eficiencia, particularmente en sistemas antiguos (pre-2015). Incorporación de optimizadores y microinversores mitiga pérdidas de sombreamiento parcial. Mantenimiento preventivo incluye verificación de cableado, conectores y sistemas de puesta a tierra. Evaluación termográfica detecta fallos celulares. Reubicación de módulos, poda de árboles o adición de seguidores solares optimizan captación angular según cambios estacionales.",
     "id": "solar_008",
     "categoria": "solar",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los componentes principales de un aerogenerador eólico?",
+    "respuesta": "Un aerogenerador eólico se compone de: rotor (palas y buje), góndola (generador, multiplicadora y controlador), torre de soporte y cimentación. Las palas capturan la energía cinética del viento, transmitiendo rotación al generador mediante el eje principal. La multiplicadora incrementa las revoluciones del eje lento al rápido, permitiendo que el generador produzca electricidad a frecuencia estándar. El controlador electrónico gestiona parámetros operacionales, mientras que la góndola alberga equipos de transmisión de potencia.",
+    "id": "eolica_000",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué factores afectan la viabilidad de un proyecto eólico terrestre?",
+    "respuesta": "La viabilidad de proyectos eólicos terrestres depende de: velocidad media anual del viento (mínimo 6-7 m/s), rugosidad del terreno, disponibilidad de conexión a red de distribución, marco regulatorio municipal y estatal, impacto ambiental en fauna voladora, distancia de núcleos urbanos, y viabilidad económica. Estudios anemométricos previos, modelado mediante software CFD, y análisis de recurso eólico mediante torres meteorológicas son determinantes para evaluar factibilidad técnica y económica del proyecto.",
+    "id": "eolica_001",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo funcionan los parques eólicos flotantes en el mar?",
+    "respuesta": "Los parques eólicos flotantes utilizan aerogeneradores instalados sobre plataformas flotantes ancladas al lecho marino con sistemas de cable dinámico. Estas plataformas adoptan configuraciones semi-sumergibles, barcaza o tensión leg platform (TLP). Operan en aguas profundas (>60 metros) donde cimentaciones fijas resultan económicamente inviables. Los sistemas de amarre distribuyen cargas de viento, olas y corrientes. Transmisión de energía se realiza mediante cables submarinos hasta subestaciones costeras. Mayor recurso eólico marino y menor impacto visual justifican inversión en tecnología flotante avanzada.",
+    "id": "eolica_002",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el impacto ambiental de la energía eólica?",
+    "respuesta": "La energía eólica presenta impactos ambientales moderados: afección a avifauna y quirópteros mediante colisiones, impacto sonoro (35-45 dB a 300 metros), alteración visual del paisaje, y consumo de suelo. Sin embargo, genera cero emisiones durante operación, evitando toneladas de CO2 anuales. Estudios de evaluación ambiental estratégica (EAE) minimizan riesgos mediante mapeo de sensibilidad ecológica. Parques eólicos marinos reducen impactos terrestres. El ciclo de vida completo presenta huella de carbono negativa después de 6-8 meses de operación.",
+    "id": "eolica_003",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las últimas innovaciones tecnológicas en energía eólica?",
+    "respuesta": "Innovaciones recientes incluyen: aerogeneradores de 12-15 MW en tierra y 18-20 MW flotantes, palas de 220+ metros mediante materiales compuestos híbridos, sistemas SCADA avanzados con inteligencia artificial para optimización predictiva, y tecnologías de almacenamiento integrado. Se desarrollan turbinas directas sin multiplicadora (DIRECT DRIVE) reduciendo pérdidas mecánicas, sistemas de control de pitch individual por pala, y transmisión HVDC para parques offshore remotos. Investigación en materiales sostenibles y reciclaje de palas amplía viabilidad ambiental y económica.",
+    "id": "eolica_004",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo se integran los parques eólicos en la red eléctrica inteligente?",
+    "respuesta": "La integración eólica en redes inteligentes (Smart Grid) requiere: pronóstico probabilístico de generación mediante machine learning, sistemas de almacenamiento (baterías, bombeo hidráulico) para compensar variabilidad, control automático de frecuencia y voltaje, y comunicación bidireccional con operador de red. Convertidores electrónicos permiten inyección de potencia reactiva sincronizada. Agregadores virtuales agrupan múltiples parques optimizando oferta en mercados eléctricos. Monitoreo SCADA en tiempo real facilita despacho coordinado y demanda flexible mediante vehículos eléctricos y carga inteligente.",
+    "id": "eolica_005",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es la rentabilidad económica de inversiones eólicas?",
+    "respuesta": "La rentabilidad eólica ha mejorado significativamente: LCOE (costo nivelado de energía) oscila entre 30-60 €/MWh en proyectos terrestres, competitivo con energías fósiles. Período de retorno de inversión típico es 7-10 años con vida útil de 20-25 años. Ingresos provienen de venta de energía en mercados eléctricos, certificados verdes (RECs), y acceso a financiamiento verde. Costos operacionales (O&M) representan 15-25% de CAPEX. Economía de escala en fabricación de componentes y optimización de cadenas suministro reducen inversiones iniciales, mejorando viabilidad financiera de nuevos proyectos.",
+    "id": "eolica_006",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué desafíos presenta la energía eólica como fuente predominante?",
+    "respuesta": "Desafíos principales incluyen: variabilidad e intermitencia de generación requiriendo almacenamiento masivo, necesidad de modernización de infraestructura de transmisión para evacuación, dependencia de condiciones meteorológicas impredecibles, limitaciones de ubicación geográfica óptimas, competencia por uso territorial, y aceptación social en zonas densas. Integración requiere sobrecapacidad instalada (15-20% adicional), sistemas de predicción meteorológica avanzados, y coordinación multinacional de despacho. Transición a grillas 100% renovables exige soluciones integradas multitecnología: solar, hidro, geotermia y almacenamiento complementario.",
+    "id": "eolica_007",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las perspectivas futuras del sector eólico global?",
+    "respuesta": "Proyecciones indican crecimiento exponencial: capacidad eólica global alcanzará 2.000+ GW en 2050 según IEA. Dominancia de offshore flotante en regiones con potencial limitado terrestre, especialmente en Europa y Asia-Pacífico. Automatización mediante drones para inspección y mantenimiento predictivo reducirá costos operacionales. Integración con hidrógeno verde mediante electrolizadores acoplados a parques eólicos, creando economía descarbonizada. Microrredes eólicas-solares-almacenamiento descentralizadas electrificarán zonas remotas. Innovación en reciclaje circular y sostenibilidad ambiental consolidará liderazgo como tecnología energética preponderante.",
+    "id": "eolica_008",
+    "categoria": "eolica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es la energía hidráulica y cómo se genera?",
+    "respuesta": "La energía hidráulica es la obtenida del aprovechamiento del flujo de agua en ríos o del almacenamiento en embalses. Se genera mediante turbinas hidráulicas que convierten la energía potencial gravitacional del agua en energía cinética, accionando generadores que producen electricidad. El caudal y la altura de caída (salto hidráulico) determinan la potencia generada. Este proceso es limpio, renovable y presenta elevadas eficiencias de conversión, típicamente entre 85-90%. Las centrales hidroeléctricas pueden ser de gran escala o minirrales, adaptándose a distintas geografías y caudales disponibles.",
+    "id": "hidraulica_000",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los tipos principales de centrales hidroeléctricas?",
+    "respuesta": "Existen tres categorías principales: centrales de embalse, que almacenan agua mediante presas regulando el caudal; centrales de agua fluyente o pasada, que aprovechan el caudal natural sin almacenamiento significativo; y centrales reversibles o bombeo, que almacenan energía bombeando agua entre depósitos a diferente altura. Las de embalse ofrecen máxima flexibilidad operativa y capacidad de regulación. Las pasadas minimizan impactos ambientales. Las reversibles actúan como sistemas de almacenamiento energético, fundamentales para integrar fuentes variables en redes eléctricas modernas.",
+    "id": "hidraulica_001",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué impacto ambiental genera la energía hidráulica?",
+    "respuesta": "La energía hidráulica presenta impactos ambientales significativos: alteración de regímenes hidrológicos naturales, fragmentación de hábitats acuáticos, afección a poblaciones de peces migratorios, modificación de sedimentología fluvial y cambios en ecosistemas ribereños. El llenado de embalses puede desplazar comunidades. Sin embargo, comparada con combustibles fósiles, evita emisiones de gases de efecto invernadero. Implementar medidas mitigadoras como pasos para peces, caudales ecológicos mínimos y estudios de impacto ambiental detallados, es esencial para equilibrar beneficios energéticos con preservación ambiental y gestión sostenible de recursos hídricos.",
+    "id": "hidraulica_002",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es la capacidad instalada de energía hidráulica a nivel mundial?",
+    "respuesta": "La energía hidráulica representa aproximadamente el 16% de la generación eléctrica global, con una capacidad instalada superior a 1.300 GW. Los principales productores son China, Canadá, Brasil, Estados Unidos e India. Esta fuente aporta más de 4.000 TWh anuales de electricidad. La potencia hidráulica constituye la fuente renovable más importante en generación eléctrica, superando energía eólica y solar combinadas. Su desarrollo continúa en países con potencial hídrico inexplorado, particularmente en África, Asia y América Latina, representando una estrategia clave para descarbonizar matrices energéticas.",
+    "id": "hidraulica_003",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo funcionan las turbinas en centrales hidroeléctricas?",
+    "respuesta": "Las turbinas hidráulicas convierten energía cinética y potencial del agua en energía mecánica. Los tipos principales son: turbinas Pelton, para saltos altos (accionadas por chorros directos); turbinas Turgo, de aplicación intermedia; turbinas Michell-Banki, para pequeños caudales; y turbinas de reacción como Francis para medios saltos y Kaplan para bajos saltos. Las turbinas operan a velocidades entre 75 y 1.000 rpm según especificaciones. Su eficiencia hidromecánica alcanza 90-95%, conectándose a generadores síncronos que transforman rotación en electricidad. El diseño optimizado de palas y álabes es crítico para máximo rendimiento operativo.",
+    "id": "hidraulica_004",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué ventajas presenta la energía hidráulica frente a otras fuentes?",
+    "respuesta": "La energía hidráulica ofrece múltiples ventajas: generación limpia sin emisiones de CO2, altísima eficiencia de conversión (85-90%), bajo costo operativo tras amortización inicial, larga vida útil (50-100 años), flexibilidad de respuesta rápida ante variaciones de demanda, y capacidad de regulación de caudales. Proporciona estabilidad a la red eléctrica, controlando frecuencia y voltaje. Permite almacenamiento estacional de energía, crucial para sistemas con penetración de renovables variables. Además, los embalses facilitan control de avenidas, abastecimiento de agua potable y riego agrícola, generando múltiples beneficios simultáneos.",
+    "id": "hidraulica_005",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el potencial de desarrollo futuro de la energía hidráulica?",
+    "respuesta": "El potencial global técnico de energía hidroeléctrica es aproximadamente 18.000 TWh anuales, del cual apenas 40% está explotado. Las mayores oportunidades se concentran en África (potencial de 400 GW), Sudamérica y Asia, donde infraestructura hídrica subdesarrollada convive con demanda creciente. El desarrollo incluye mini y micro-centrales para electrificación rural, turbinas de salto variable y sistemas de bombeo reversible como almacenamiento. Innovaciones tecnológicas como turbinas sumergidas, generadores directos y monitoreo inteligente mejorarán eficiencia. Proyectos transfronterizos coordinados optimizarán recursos hídricos compartidos, maximizando generación sostenible.",
+    "id": "hidraulica_006",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo se integra la energía hidráulica en redes eléctricas modernas?",
+    "respuesta": "La integración de centrales hidroeléctricas en redes inteligentes requiere sistemas SCADA avanzados para gestión optimizada de caudales y despacho económico. Su capacidad de respuesta rápida complementa fuentes intermitentes como eólica y solar, proporcionando flexibilidad operativa. Las centrales reversibles actúan como baterías gigantes, almacenando energía excedente bombando agua entre embalses. Algoritmos de gestión predictiva basados en datos meteorológicos optimizan regulación. La interconexión internacional de sistemas hidráulicos amplia opciones de regulación. Smart grids y telecomunicaciones permiten coordinación en tiempo real, maximizando estabilidad, confiabilidad y penetración de fuentes renovables variables.",
+    "id": "hidraulica_007",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué desafíos enfrenta el sector hidroeléctrico actualmente?",
+    "respuesta": "El sector hidroeléctrico afronta desafíos significativos: variabilidad climática y sequías reducen disponibilidad de caudales; cambio climático altera patrones de precipitación históricamente predecibles; conflictos por recursos hídricos entre usos energético, agrícola y doméstico; limitaciones ambientales y sociales en nuevos proyectos; envejecimiento de infraestructura (amerita modernización); y competencia económica de tecnologías renovables de costo decreciente. Requiere inversión en investigación de impactos ecológicos, mejora de gestión ambiental, resolución de conflictos transfronterizos sobre cuencas compartidas, y adaptación a patrones climáticos futuros mediante modelado avanzado y planificación hidrológica integrada.",
+    "id": "hidraulica_008",
+    "categoria": "hidraulica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los principales sistemas de almacenamiento de energía en el sector energético?",
+    "respuesta": "Los sistemas de almacenamiento energético incluyen baterías de iones de litio, sistemas de almacenamiento térmico, bombeo hidráulico y volantes de inercia. Las baterías Li-ion dominan el mercado de almacenamiento de corta duración (2-4 horas), mientras que el bombeo hidráulico es ideal para almacenamiento de larga duración. Los sistemas de almacenamiento térmico capturan calor en sales fundidas o medios cerámicos. El almacenamiento distribuido y centralizado son configuraciones complementarias en redes inteligentes modernas.",
+    "id": "almacenamiento_000",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué ventajas proporciona el almacenamiento en batería para redes eléctricas?",
+    "respuesta": "El almacenamiento en batería mejora la estabilidad de la red, compensa la variabilidad de fuentes renovables y proporciona respuesta rápida ante fluctuaciones de demanda. Ofrece arbitraje energético, permitiendo comprar energía en horas valle y vender en picos. Reduce congestiones de transmisión y retrasa inversiones en infraestructura. Proporciona servicios auxiliares como regulación de frecuencia y voltaje. Su modularidad permite despliegues escalables en microrredes y sistemas aislados.",
+    "id": "almacenamiento_001",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo funcionan los sistemas de almacenamiento de energía térmica en centrales solares?",
+    "respuesta": "El almacenamiento térmico captura calor solar en medios como sales fundidas (nitrato de sodio-potasio) o aceite sintético, manteniéndolo a temperaturas entre 290-570°C. Este calor se transfiere a generadores de vapor para producir electricidad mediante ciclos Rankine. Permite operación nocturna extendiendo 6-15 horas la generación. Sistema CTES (concentrating thermal energy storage) logra eficiencias de 90% y reduce intermitencia solar, mejorando factores de capacidad de plantas termosolares.",
+    "id": "almacenamiento_002",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el papel del almacenamiento en la integración de energías renovables?",
+    "respuesta": "El almacenamiento mitiga la variabilidad de generación eólica y solar, capturando energía en períodos de sobreproducción para liberarla en demanda pico. Permite penetraciones de renovables superiores al 50% sin comprometer confiabilidad. Sincroniza oferta-demanda mediante predicción meteorológica integrada. Reduce cortinas de humo (curtailment) de fuentes limpias y evita arranques innecesarios de plantas fósiles. Facilita transición energética acelerando descarbonización del sector eléctrico global.",
+    "id": "almacenamiento_003",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué tecnologías emergentes de almacenamiento se esperan en 2025-2030?",
+    "respuesta": "Baterías de estado sólido prometen densidades energéticas 50% superiores con mayor seguridad. Sistemas de aire comprimido isotérmico mejoran eficiencias a 70%. Almacenamiento en hidrógeno verde mediante electrólisis PEM permite largo plazo con capacidades de GWh. Baterías de sodio-ion reducen dependencia de litio. Volantes magnéticos alcanzan 100 MWh. Sistemas de energía potencial gravitacional en torres compactas emergen como alternativa modular. Estas tecnologías complementan baterías convencionales optimizando según duración requerida.",
+    "id": "almacenamiento_004",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los costos actuales de almacenamiento y su proyección?",
+    "respuesta": "El almacenamiento en batería Li-ion alcanza $100-200/kWh en 2024, bajando a $50-80/kWh proyectado 2030. Sistemas de 4 horas cuestan $400-800/kW. Bombeo hidráulico operativo: $1,500-2,500/kW. Almacenamiento térmico: $20-50/kWh. Curva de aprendizaje tecnológico reduce costos 8-10% anualmente. Economías de escala e innovación en química celular impulsan deflación. Competitividad mejora contra plantas de gas pico, permitiendo mayor penetración en matrices de generación descentralizada.",
+    "id": "almacenamiento_005",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo se dimensionan los sistemas de almacenamiento energético?",
+    "respuesta": "El dimensionamiento analiza curvas de demanda horaria, generación variable de renovables y requisitos de confiabilidad (métricas Loss-of-Load-Probability). Modelos de optimización determinan capacidad (MW) y energía (MWh) minimizando costos de ciclo vida. Simulaciones temporales evalúan estrategias de carga-descarga. Criterios técnicos incluyen ramp-rate, profundidad de descarga y durabilidad cíclica. Herramientas como SAM, Homer Pro y modelos propios consideran geografía, climatología y topología de red para especificaciones óptimas.",
+    "id": "almacenamiento_006",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los impactos ambientales y de reciclaje del almacenamiento?",
+    "respuesta": "Baterías Li-ion presentan ciclo vida 8-15 años. Reciclaje recupera 95% de litio, cobalto y níquel, reduciendo nuevas extracciones. Gestión de residuos electroquímicos requiere regulación estricta evitando contaminación acuífera. Baterías de sodio-ion tienen menor impacto ambiental por abundancia de materia prima. Análisis de ciclo vida (LCA) muestra que emisiones de fabricación se amortiguzan en 1-2 años de operación. Legislación UE (Directiva Baterías) impulsa economía circular y trazabilidad mineral en cadena suministro global.",
+    "id": "almacenamiento_007",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué regulaciones afectan los proyectos de almacenamiento energético?",
+    "respuesta": "Marco normativo incluye Directiva Energías Renovables (RED IV), Reglamento de Almacenamiento (EU 2023), y códigos de red (NC RfG, NC DCC). Permisos ambientales requieren evaluaciones de impacto. Regulaciones de conexión especifican requisitos técnicos de operación y servicios auxiliares. Mercados de capacidad retribuyen disponibilidad. Normativas de seguridad (NFPA 855, IEC 61427) rigen instalaciones. Legislación tributaria diferencia tratamiento fiscal. Reglamentos laborales supervisan manufactura. Cumplimiento multi-jurisdiccional complica proyectos transfronterizos en Europa.",
+    "id": "almacenamiento_008",
+    "categoria": "almacenamiento",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué son las redes eléctricas inteligentes o smart grids?",
+    "respuesta": "Las smart grids son sistemas de distribución eléctrica que integran tecnologías digitales, sensores y comunicaciones bidireccionales para optimizar la generación, transmisión y consumo de energía. Utilizan algoritmos de inteligencia artificial y análisis de datos en tiempo real para mejorar la eficiencia operativa, reducir pérdidas técnicas y facilitar la integración de fuentes renovables variables. Permiten detección automática de fallos, autorecuperación de fallas y gestión dinámica de la demanda, mejorando la confiabilidad y resiliencia del sistema eléctrico.",
+    "id": "redes_electricas_000",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es la función de los transformadores en las redes eléctricas?",
+    "respuesta": "Los transformadores son equipos electromagnéticos que modifican los niveles de voltaje y corriente en las redes eléctricas sin alterar la frecuencia. En la transmisión, incrementan el voltaje para reducir pérdidas resistivas en conductores; en la distribución, lo reducen para uso seguro en instalaciones. Operan mediante inducción electromagnética entre bobinados primarios y secundarios. Son componentes críticos para la eficiencia del sistema, evitando disipación de energía y permitiendo el transporte económico de potencia a largas distancias.",
+    "id": "redes_electricas_001",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué son los dispositivos FACTS en sistemas eléctricos?",
+    "respuesta": "Los FACTS (Flexible AC Transmission Systems) son dispositivos electrónicos de potencia que controlan dinámicamente parámetros de transmisión como voltaje, impedancia y ángulo de fase. Incluyen tecnologías como SVC, STATCOM, TCSC y UPFC que mejoran estabilidad transitoria, aumentan capacidad de transmisión y reducen oscilaciones de potencia. Utilizan tiristores y componentes semiconductores avanzados para respuesta ultrarrápida en milisegundos, permitiendo operación más flexible de líneas existentes sin expansión física de infraestructura.",
+    "id": "redes_electricas_002",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el rol de los centros de control en operación de redes?",
+    "respuesta": "Los centros de control (CECOEL) son instalaciones que supervisan y coordinan operaciones de generación, transmisión y distribución mediante sistemas SCADA y EMS. Monitorizan voltajes, frecuencias, flujos de potencia y equipamientos en tiempo real, ejecutando despachos económicos y coordinación de protecciones. Implementan algoritmos de optimización para garantizar confiabilidad, mantener equilibrio frecuencia-voltaje y prevenir cascadas de fallos. Son esenciales para la operación segura, eficiente y económica de redes interconectadas complejas.",
+    "id": "redes_electricas_003",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué son las microrredes y su importancia en sistemas modernos?",
+    "respuesta": "Las microrredes son sistemas de distribución locales que integran generación distribuida, almacenamiento de energía y cargas controlables, operando de forma conectada o aislada (islanding). Incluyen recursos renovables, sistemas de respuesta de demanda y baterías de iones de litio o tecnologías emergentes. Mejoran resiliencia ante interrupciones, reducen pérdidas técnicas, facilitan integración masiva de energías renovables e incrementan eficiencia mediante control automatizado. Son componentes clave de la transición energética y ciudades inteligentes.",
+    "id": "redes_electricas_004",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo funcionan los relés de protección en redes eléctricas?",
+    "respuesta": "Los relés de protección son dispositivos que detectan condiciones anormales (sobrecargas, cortocircuitos, caídas de voltaje) mediante señales de transformadores de corriente y potencial. Utilizan lógica analógica o digital para comparar parámetros medidos contra valores de calibración predefinidos. Al detectar anomalías, cierran circuitos que disparan interruptores automáticos, aislando sectores afectados en milisegundos. Tecnologías modernas incluyen relés numéricos con comunicación IEC 61850 para coordinación selectiva y esquemas de protección avanzados.",
+    "id": "redes_electricas_005",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es el almacenamiento de energía en redes eléctricas?",
+    "respuesta": "El almacenamiento de energía comprende tecnologías que capturan electricidad para inyectarla posteriormente, mejorando flexibilidad operativa y estabilidad. Incluye baterías (Li-ion, flujo redox), sistemas electromecánicos (bombeo hidráulico, aire comprimido), térmicos y de hidrógeno verde. Permiten arbitraje temporal, nivelación de demanda, respaldo en contingencias y gestión de variabilidad renovable. Son fundamentales para acelerar descarbonización, reducir vertimientos de energía y optimizar aprovechamiento de fuentes intermitentes en redes modernas.",
+    "id": "redes_electricas_006",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el impacto de la electrificación en la planificación de redes?",
+    "respuesta": "La electrificación de sectores como transporte y calefacción incrementa demanda eléctrica, requiriendo expansión de capacidad generadora y refuerzo de infraestructura de transmisión-distribución. Introduce nuevas cargas no lineales (vehículos eléctricos, bombas de calor) que generan armónicos y exigen sistemas más robustos. Demanda coordinar expansión de red con despliegue de recursos renovables, almacenamiento y sistemas de respuesta de demanda. Implica inversiones significativas en modernización de subestaciones, conductores y automatización para mantener calidad y confiabilidad.",
+    "id": "redes_electricas_007",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué son las interconexiones internacionales de energía?",
+    "respuesta": "Las interconexiones internacionales son líneas de transmisión que conectan sistemas eléctricos de países distintos, facilitando intercambios comerciales de energía y mejorando seguridad operativa. Utilizan tecnología HVDC (corriente directa) para transmisiones de larga distancia con menores pérdidas. Permiten optimizar recursos energéticos regionales, reducir costos marginales, integrar energías renovables de zonas distantes y mejorar estabilidad mediante respaldo mutuo. Requieren marcos regulatorios y acuerdos bilaterales complejos para coordinación técnica y económica.",
+    "id": "redes_electricas_008",
+    "categoria": "redes_electricas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el impacto ambiental de la extracción de petróleo y gas natural?",
+    "respuesta": "La extracción de petróleo y gas genera emisiones de CO2 y metano, contaminación del suelo y acuíferos por derrames, y degradación de ecosistemas. Los hidrocarburos liberan gases de efecto invernadero durante la combustión. La perforación offshore presenta riesgos de fugas catastróficas. La gestión de residuos de fracturación hidráulica requiere tratamientos especializados para evitar la contaminación de acuíferos. La industria debe implementar tecnologías de captura de carbono y restauración ambiental para mitigar impactos negativos.",
+    "id": "petroleo_gas_000",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo funciona la fracturación hidráulica en la extracción de gas?",
+    "respuesta": "La fracturación hidráulica o fracking inyecta fluidos a alta presión en formaciones rocosas para crear fracturas y liberar gas natural atrapado. El proceso utiliza agua, arena y aditivos químicos para mantener las grietas abiertas y facilitar la producción. Esta tecnología ha revolucionado el acceso a reservas no convencionales, incrementando la productividad. Sin embargo, requiere volúmenes significativos de agua y presenta riesgos de contaminación subterránea si no se implementan protocolos de sellado de pozos adecuados.",
+    "id": "petroleo_gas_001",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las principales reservas mundiales de petróleo y gas?",
+    "respuesta": "Las mayores reservas petrolíferas se encuentran en Oriente Medio, especialmente Arabia Saudita, Irán e Irak. Venezuela posee recursos bituminosos significativos. Para gas natural, Rusia, Irán y Catar dominan las reservas convencionales. Estados Unidos y China lideran recursos de gas de esquisto no convencionales. El Ártico y aguas profundas representan fronteras de exploración emergentes. La distribución geográfica asimétrica genera dependencias energéticas geopolíticas y volatilidad de precios internacionales en mercados de crudo y gas licuado.",
+    "id": "petroleo_gas_002",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es el gas natural licuado y cuál es su importancia comercial?",
+    "respuesta": "El gas natural licuado (GNL) es gas natural refrigerado a -161°C para reducir volumen, facilitando transporte marítimo transcontinental. Mediante plantas de regasificación, se convierte nuevamente a estado gaseoso. El GNL es crucial para mercados sin conexión por gasoductos, permitiendo comercio flexible. Los principales exportadores son Australia, Qatar y Rusia. El GNL proporciona seguridad energética diversificada y reduce dependencia de infraestructuras terrestres. Los precios se fijan frecuentemente mediante indexación a crudo Brent, impactando economías importadoras.",
+    "id": "petroleo_gas_003",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las tendencias de transición energética en la industria petrolera?",
+    "respuesta": "Las empresas de petróleo y gas invierten progresivamente en energías renovables, captura de carbono y economía circular. Se integran proyectos de energía solar, eólica e hidrógeno verde. La tecnología de captura, utilización y almacenamiento de carbono (CCUS) cobra relevancia estratégica. Regulaciones ESG y presión inversora aceleran la descarbonización. Algunos operadores desarrollan combustibles sintéticos y biocombustibles avanzados. La transición energética global requiere modernización de infraestructuras y reconversión laboral en regiones dependientes de hidrocarburos.",
+    "id": "petroleo_gas_004",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo se determina el precio internacional del petróleo?",
+    "respuesta": "El precio del crudo se establece en mercados globales mediante referencias como Brent (Europa), WTI (América) y Dubái (Asia). Factores determinantes incluyen oferta-demanda, geopolítica, especulación financiera, tipos de cambio y ciclos económicos. Los contratos forward y futuros en bolsas como ICE y NYMEX facilitan precio descubrimiento. Cartel OPEP+ influye mediante ajustes de producción. Eventos disruptivos (conflictos, desastres naturales) generan volatilidad. Precios fluctúan según estructura del mercado: contango o backwardation.",
+    "id": "petroleo_gas_005",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el rol de la OPEP en la industria petrolera mundial?",
+    "respuesta": "La Organización de Países Exportadores de Petróleo (OPEP) coordina políticas de producción de 13 miembros, controlando aproximadamente el 40% de suministro global. Establece cuotas de producción para estabilizar precios e ingresos. La alianza OPEP+ incluye productores no miembros como Rusia, ampliando influencia. Su poder de mercado genera externalidades económicas significativas en economías importadoras. Decisiones sobre restricciones de producción afectan inflación global, empleo e inversiones en energías alternativas. Su efectividad depende de cumplimiento de acuerdos entre miembros.",
+    "id": "petroleo_gas_006",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los principales riesgos operacionales en la industria de petróleo y gas?",
+    "respuesta": "Los riesgos operacionales incluyen accidentes en plataformas offshore, explosiones, derrames catastróficos e incendios con alta mortalidad. La corrosión de infraestructuras y fatiga de materiales comprometen integridad de instalaciones. Eventos climáticos extremos dañan equipos y suspenden operaciones. Sabotaje y robo de producto afectan seguridad. La gestión de residuos peligrosos y tecnologías anticorrupción requieren inversiones robustas. Protocolos rigurosos de inspección, mantenimiento preventivo y cultura de seguridad ocupacional son críticos para mitigar catástrofes ambientales y humanas.",
+    "id": "petroleo_gas_007",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo impacta la volatilidad de precios de petróleo en economías dependientes?",
+    "respuesta": "Economías petrodependientes experimentan inestabilidad fiscal cuando precios caen, reduciendo ingresos tributarios y presupuestos públicos. La apreciación o depreciación de divisas genera inflación e impacta competitividad exportadora. Ciclos boom-bust crean desempleo y pobreza cíclica. Inversión en infraestructura pública fluctúa con precios, afectando educación y salud. La diversificación económica insuficiente perpetúa vulnerabilidad. Fondos soberano estabilizan ingresos en algunos países. Transiciones energéticas acentúan presión, requiriendo reformas estructurales y reconversión productiva hacia sectores de mayor valor agregado.",
+    "id": "petroleo_gas_008",
+    "categoria": "petroleo_gas",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es la transición energética y cuáles son sus objetivos principales?",
+    "respuesta": "La transición energética es el proceso de transformación del sistema energético global hacia fuentes renovables y sostenibles. Sus objetivos principales incluyen: reducir emisiones de gases de efecto invernadero, disminuir la dependencia de combustibles fósiles, mejorar la eficiencia energética y garantizar seguridad energética. Este cambio paradigmático implica la descarbonización de sectores como generación eléctrica, transporte e industria, mediante la implementación de energías eólica, solar, geotérmica e hidroeléctrica. La transición requiere inversiones significativas en infraestructura, tecnología y capacitación laboral para garantizar una implementación equitativa y económicamente viable.",
+    "id": "transicion_energetica_000",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el papel de las energías renovables en la transición energética?",
+    "respuesta": "Las energías renovables son fundamentales en la transición energética, proporcionando alternativas limpias a combustibles fósiles. La energía solar fotovoltaica y termosolar, junto con la eólica terrestre y marina, representan las tecnologías de mayor crecimiento. Estas fuentes ofrecen ventajas significativas: cero emisiones operacionales, costos decrecientes y disponibilidad local. Sin embargo, requieren infraestructura de almacenamiento (baterías, sistemas de bombeo), redes inteligentes y tecnología de integración para gestionar variabilidad. Se estima que las renovables alcanzarán 80-90% de la matriz energética para 2050, complementadas con energía nuclear, hidrógeno verde y captura de carbono.",
+    "id": "transicion_energetica_001",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué desafíos enfrentan los gobiernos en la implementación de la transición energética?",
+    "respuesta": "Los gobiernos enfrentan múltiples desafíos en la transición energética: inversión capital masiva (trillones de dólares), obsolescencia de infraestructura carbonointensiva, dependencia económica de regiones productoras de combustibles fósiles, y transición laboral de millones de trabajadores. Existen limitaciones tecnológicas en almacenamiento energético a gran escala y sistemas de distribución inteligentes. Además, requiere coordinación internacional, marcos regulatorios consistentes y financiamiento innovador. La brecha de inversión estimada es de USD 2.5 trillones anuales. Desafíos geopolíticos y conflictos por recursos energéticos también complican la implementación equitativa y justa globalmente.",
+    "id": "transicion_energetica_002",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es la importancia del almacenamiento de energía en la transición energética?",
+    "respuesta": "El almacenamiento energético es crítico para viabilizar la transición, resolviendo la intermitencia de fuentes renovables. Las tecnologías principales incluyen: baterías de iones de litio, sistemas de bombeo hidroeléctrico, almacenamiento térmico, aire comprimido y volantes de inercia. Las baterías de flujo permiten escalabilidad para periodos prolongados, mientras que el hidrógeno verde ofrece almacenamiento estacional. La capacidad de almacenamiento debe aumentar exponencialmente para soportar redes 100% renovables. Se estima que se necesitan 5 teravatios-hora adicionales anuales para 2040. El desarrollo de tecnologías emergentes como baterías de sodio-ión y almacenamiento gravitacional es esencial para democratizar la transición energética global.",
+    "id": "transicion_energetica_003",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es el hidrógeno verde y su relevancia en la transición energética?",
+    "respuesta": "El hidrógeno verde se produce mediante electrólisis del agua utilizando electricidad de fuentes renovables, generando cero emisiones de carbono. Es relevante para descarbonizar sectores difíciles de electrificar: industria pesada, aviación, navegación marítima y calefacción industrial. Como vector energético, permite almacenamiento estacional y transporte de energía a largas distancias. La producción actual es mínima, pero inversiones masivas en tecnología de electrolizadores (alcalinos, membrana de intercambio protónico, óxido sólido) reducirán costos. El desafío principal es la viabilidad económica: actualmente cuesta 3-8 USD/kg versus 1.50 USD/kg del hidrógeno gris. La infraestructura de distribución mediante tuberías modificadas acelera su implementación industrial.",
+    "id": "transicion_energetica_004",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo impacta la transición energética en la economía y el empleo?",
+    "respuesta": "La transición energética genera oportunidades económicas significativas pero también disrupciones laborales. Se crearán millones de empleos en energías renovables, manufactura de componentes, instalación, operación y mantenimiento de infraestructura. Sectores como construcción solar/eólica y fabricación de baterías experimentarán crecimiento acelerado. Sin embargo, empleos tradicionales en extracción de carbón, petróleo y gas disminuirán, requiriendo programas de reconversión laboral. Los costos iniciales de inversión (estimados en USD 10-15 trillones acumulativos) se compensan con ahorros operacionales y externalidades evitadas (costos sanitarios, ambientales). Regiones dependientes de combustibles fósiles necesitan diversificación económica y transiciones justas para minimizar desigualdades socioeconómicas.",
+    "id": "transicion_energetica_005",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es la contribución de la eficiencia energética en la transición energética?",
+    "respuesta": "La eficiencia energética es el primer pilar de la transición, reduciendo demanda mediante optimización tecnológica y comportamental. En edificios, aislamiento mejorado, sistemas HVAC eficientes y automatización inteligente reducen consumo 30-50%. En industria, motores eléctricos optimizados, recuperación de calor residual y procesos lean disminuyen intensidad energética. El transporte eficiente mediante vehículos eléctricos y sistemas de movilidad integrada es fundamental. Mejoras en iluminación LED y electrodomésticos representan ahorros significativos. La eficiencia reduce inversión total necesaria en generación y almacenamiento. Estándares regulatorios (etiquetado energético, códigos de construcción) y certificaciones (ISO 50001) impulsan adopción. Se estima que la eficiencia puede satisfacer 40% de reducción de emisiones requerida para 2050.",
+    "id": "transicion_energetica_006",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué papel juegan los vehículos eléctricos en la transición energética?",
+    "respuesta": "Los vehículos eléctricos (VE) son transformadores clave en la descarbonización del transporte, responsable de 27% de emisiones globales. Los VE ofrecen cero emisiones operacionales, eficiencia 3-4 veces superior a motores de combustión interna, y menores costos de operación. La adopción acelerada depende de infraestructura de carga (rápida, ultrarápida), disponibilidad de baterías asequibles y autonomía mejorada (actualmente 300-600 km). Las baterías representan 35-50% del costo vehicular; su reciclaje es crítico para circularidad. Integración con redes inteligentes permite carga flexible y servicios de almacenamiento distribuido. Se proyecta 70% de ventas de vehículos nuevos electrificados para 2050. Sectores de buses, camiones y aviación requieren electrificación o combustibles alternativos para completar descarbonización del transporte.",
+    "id": "transicion_energetica_007",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo se financia la transición energética a nivel global?",
+    "respuesta": "La financiación de la transición requiere mecanismos innovadores y diversificados. Los fondos provienen de: inversión privada (capital de riesgo, private equity), finanzas públicas, bonos verdes, fondos de pensiones, y financiamiento climático internacional (Banco Mundial, Fondo Verde para el Clima). Los bonos verdes certificados han alcanzado USD 500+ mil millones anuales. Subsidios a energías renovables, créditos fiscales e incentivos regulatorios aceleran despliegue. Instituciones financieras integran criterios ESG (ambientales, sociales, de gobernanza) en decisiones. Desafíos incluyen: canalizar capital hacia países en desarrollo, reducir riesgo percibido de proyectos renovables, y mecanismos de precificación de carbono (ETS, impuestos). La mobilización de capital privado es esencial: se requieren USD 2.5-3 trillones anuales hasta 2050 para transición completa.",
+    "id": "transicion_energetica_008",
+    "categoria": "transicion_energetica",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué es la eficiencia energética en la industria?",
+    "respuesta": "La eficiencia energética industrial es la optimización del consumo de energía en procesos productivos mediante tecnologías y prácticas que reducen pérdidas termales, mecánicas y eléctricas. Implica implementar sistemas de gestión energética, motores de alta eficiencia, recuperación de calor residual y automatización de controles. Esto disminuye costos operativos, reduce emisiones de CO2 y mejora la competitividad empresarial manteniendo o aumentando la producción.",
+    "id": "industria_eficiencia_000",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son las principales medidas de eficiencia en plantas manufactureras?",
+    "respuesta": "Las medidas clave incluyen: instalación de motores IE3/IE4 de alta eficiencia, sistemas de compresión de aire optimizados, iluminación LED con sensores de movimiento, variadores de frecuencia (VFD) en bombas y ventiladores, aislamiento térmico en tuberías, recuperación de calor residual en intercambiadores, auditorías energéticas periódicas y sistemas de monitoreo en tiempo real mediante IoT para identificar anomalías y consumos anormales.",
+    "id": "industria_eficiencia_001",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo impacta la eficiencia energética en la rentabilidad industrial?",
+    "respuesta": "La eficiencia energética reduce directamente el costo de operación entre 10-30% según sector. Disminuye gastos en consumo eléctrico y combustibles, extendiendo la vida útil de equipos mediante operación optimizada. Genera créditos fiscales y acceso a financiamiento verde. Mejora la imagen corporativa facilitando certificaciones ISO 50001. El retorno de inversión típicamente oscila entre 2-5 años, transformando la eficiencia en ventaja competitiva sostenible.",
+    "id": "industria_eficiencia_002",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué tecnologías emergentes revolucionan la eficiencia industrial?",
+    "respuesta": "Tecnologías disruptivas incluyen: inteligencia artificial para optimización predictiva de procesos, gemelos digitales para simulación y análisis, machine learning para detección de anomalías, sistemas SCADA avanzados, redes 5G para IoT industrial, baterías de almacenamiento local, microgrids inteligentes y electrificación de procesos térmicos. Estas soluciones integradas permiten automatización autónoma, reduciendo consumo hasta 40% y habilitando manufactura circular.",
+    "id": "industria_eficiencia_003",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuál es el rol de la auditoría energética en la industria?",
+    "respuesta": "La auditoría energética es diagnóstico sistemático que identifica ineficiencias, cuantifica consumos por proceso y equipo, y propone mejoras priorizadas. Utiliza termografía infrarroja, análisis de datos históricos y mediciones en tiempo real. Cumple obligaciones normativas (Directiva 2012/27/UE) y genera líneas base para benchmarking. Resulta fundamental para establecer planes de acción cuantificables y monitorear avances hacia objetivos de reducción de carbono.",
+    "id": "industria_eficiencia_004",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cómo se implementa un sistema de gestión energética ISO 50001?",
+    "respuesta": "ISO 50001 establece ciclo PDCA: planificación de objetivos energéticos, implementación de controles operacionales, medición continua mediante sistemas de monitoreo, análisis de datos y auditorías internas, y mejora sistemática. Requiere designar responsable energético, crear política energética documentada, identificar usos significativos de energía, establecer indicadores de desempeño (EnPI) y realizar seguimiento trimestral. Proporciona marco estructurado para reducción sostenida de consumo.",
+    "id": "industria_eficiencia_005",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué impacto tiene la eficiencia en la descarbonización industrial?",
+    "respuesta": "La eficiencia energética es pilar fundamental de descarbonización, reduciendo emisiones de Alcance 1 y 2. Combinada con energías renovables, permite transición hacia neutralidad carbónica. Estudios demuestran que eficiencia contribuye 40-50% de reducciones necesarias para cumplir objetivos climáticos. Facilita transición energética mediante: menor demanda absoluta, integración de renovables variable, electrificación de procesos térmicos y captura de carbono en instalaciones optimizadas.",
+    "id": "industria_eficiencia_006",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Cuáles son los indicadores clave de desempeño energético (KPI)?",
+    "respuesta": "KPIs principales incluyen: Intensidad Energética (kWh/unidad producida), Consumo Específico por Proceso, Factor de Carga de Equipos, Coeficiente de Rendimiento Energético (COP), Pérdidas Termales Porcentuales y Energía Renovable Integrada (%). Se normalizan por variables de producción, clima y utilización de capacidad. El seguimiento continuo mediante dashboards permite identificar desviaciones, detectar equipos degradados y validar efectividad de mejoras implementadas.",
+    "id": "industria_eficiencia_007",
+    "categoria": "industria_eficiencia",
+    "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "pregunta": "¿Qué financiamiento existe para proyectos de eficiencia industrial?",
+    "respuesta": "Existen múltiples mecanismos: créditos verdes bancarios con tasas preferenciales, fondos de la UE (Horizonte Europa, LIFE), bonos verdes corporativos, subsidios gubernamentales por reducción de emisiones, esquemas de eficiencia energética obligatorios (EEO), contratos de rendimiento energético (EPC) con terceros, y deducciones fiscales por inversión en tecnologías limpias. Combinación de instrumentos reduce costo de capital y acelera ROI de iniciativas.",
+    "id": "industria_eficiencia_008",
+    "categoria": "industria_eficiencia",
     "fuente": "generado_LLM_revisado",
     "año": 2026
   }
