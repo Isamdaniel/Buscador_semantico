@@ -56,22 +56,22 @@ def matriz_similitudes(lista_vectores):
 # Con todo esto, ya podemos dibujar la figura.
 
 #Ejecutamos todo y después dibujamos.
+if __name__=="__main__":
+    indices_a_usar=claves_a_usar(documentos)
+    #Tenemos que obtener el diccionario de vectores, para eso llamamos a la función que tenemos definida en embeddings.py 
+    cliente = voyageai.Client()
+    corpus = cargar_corpus()
+    diccionario_vect=generar_embeddings_corpus(documentos, "solo_respuesta",cliente, "voyage-4-lite", "document")
+    lista_vectores=obtener_vectores(indices_a_usar,diccionario_vect)
 
-indices_a_usar=claves_a_usar(documentos)
-#Tenemos que obtener el diccionario de vectores, para eso llamamos a la función que tenemos definida en embeddings.py 
-cliente = voyageai.Client()
-corpus = cargar_corpus()
-diccionario_vect=generar_embeddings_corpus(documentos, "solo_respuesta",cliente, "voyage-4-lite", "document")
-lista_vectores=obtener_vectores(indices_a_usar,diccionario_vect)
+    matriz_a_mapear=matriz_similitudes(lista_vectores)
 
-matriz_a_mapear=matriz_similitudes(lista_vectores)
-
-plt.figure(figsize=(12,10))
-plt.title("Mapa de calor de los embeddings de los 3 primeros id por categoria")
-sns.heatmap(data=matriz_a_mapear,annot=True,xticklabels=indices_a_usar,yticklabels=indices_a_usar)
-plt.xlabel("Ids")
-plt.ylabel("Embeddings")
-plt.savefig("assets/mapa_calor.png")
-plt.show()
+    plt.figure(figsize=(12,10))
+    plt.title("Mapa de calor de los embeddings de los 3 primeros id por categoria")
+    sns.heatmap(data=matriz_a_mapear,annot=True,xticklabels=indices_a_usar,yticklabels=indices_a_usar)
+    plt.xlabel("Ids")
+    plt.ylabel("Embeddings")
+    plt.savefig("assets/mapa_calor.png")
+    plt.show()
 
 
