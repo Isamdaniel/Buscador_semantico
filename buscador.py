@@ -43,4 +43,5 @@ if __name__ == "__main__":
     resultados = buscar("¿cómo funcionan los paneles solares?", 3, "petroleo_gas")
     for r in resultados:
         print(r["id"], round(r["similitud"], 3), r["categoria"])
+        print(r, type(r))
 

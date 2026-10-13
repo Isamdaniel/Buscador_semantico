@@ -87,15 +87,16 @@ def generar_embeddings_corpus(lista_docs, modo, cliente,modelo,input_type):
     # Preparo una lista de documentos vacíos donde voy a ir acumulando los textos a embebber, uno por cada documento, en el mismo orden
     lista_final=[]
     for documento in lista_docs:
-        lista_final.append(construir_texto(documento,modo)) # Añado el tipo de documento que quiero a la lista
-    lista_vectores=embed_con_cache(lista_final,cliente,modelo,input_type)
+        lista_final.append(construir_texto(documento,modo)) # Añado el tipo de documento que quiero a la lista (pregunta,respuesta o ambas)
+    lista_vectores=embed_con_cache(lista_final,cliente,modelo,input_type) # Genero sus embeddings
     diccionario_vectores={}
-    for documento, vector in zip(lista_docs,lista_vectores):
+    for documento, vector in zip(lista_docs,lista_vectores): 
         diccionario_vectores[documento["id"]]=vector
 
     return diccionario_vectores
 
-if __name__ == "__main__":
+if __name__ == "__main__": # ¿me están ejecutando directamente, o me están importando desde otro archivo?
+    # Si la respuesta es "me ejecutan directamente" → se cumple la condición, y todo lo que está dentro del if se ejecuta .
     cliente = voyageai.Client()
     corpus = cargar_corpus()
     vectores = generar_embeddings_corpus(corpus, "solo_respuesta", cliente, "voyage-4-lite", "document")
@@ -103,6 +104,7 @@ if __name__ == "__main__":
     # Para ver un vector de ejemplo y confirmar su dimensionalidad:
     primer_id = list(vectores.keys())[0]
     print("Ejemplo de id:", primer_id, "- dimensiones del vector:", len(vectores[primer_id]))
+    # Si la respuesta es "me están importando" → la condición es falsa, y ese bloque no se ejecuta, solo quedan disponibles las funciones y variables definidas arriba para que el otro archivo las use.
 
      
 
