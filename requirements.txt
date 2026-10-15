@@ -1,0 +1,7 @@
+anthropic
+voyageai
+chromadb
+numpy
+matplotlib
+seaborn
+python-dotenv

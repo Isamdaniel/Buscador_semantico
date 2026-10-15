@@ -1,0 +1,765 @@
+{
+  "informacion": [
+    {
+      "pregunta": "¿Qué eficiencia alcanzan las celdas de silicio monocristalino en paneles solares?",
+      "id_esperado": "solar_000",
+      "tipo": "facil",
+      "id_clave": [
+        "solar_000",
+        "solar_002",
+        "solar_007"
+      ],
+      "id_semantico": [
+        "solar_000",
+        "solar_003",
+        "solar_007"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué aparato se encarga de adaptar la electricidad generada por las placas para que pueda usarse en el hogar o enviarse a la red?",
+      "id_esperado": "solar_001",
+      "tipo": "dificil",
+      "id_clave": [
+        "hidraulica_000",
+        "almacenamiento_002",
+        "petroleo_gas_001"
+      ],
+      "id_semantico": [
+        "solar_001",
+        "eolica_005",
+        "redes_electricas_001"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cuántos años de garantía tienen los paneles solares fotovoltaicos?",
+      "id_esperado": "solar_003",
+      "tipo": "facil",
+      "id_clave": [
+        "solar_003",
+        "solar_000",
+        "solar_007"
+      ],
+      "id_semantico": [
+        "solar_003",
+        "solar_006",
+        "solar_007"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Por qué conviene instalar placas solares en pueblos alejados que no tienen cableado eléctrico?",
+      "id_esperado": "solar_004",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_003",
+        "almacenamiento_007",
+        "redes_electricas_007"
+      ],
+      "id_semantico": [
+        "solar_004",
+        "solar_008",
+        "solar_005"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué normas hay que cumplir para instalar placas solares de forma legal?",
+      "id_esperado": "solar_006",
+      "tipo": "dificil",
+      "id_clave": [
+        "industria_eficiencia_006",
+        "solar_003",
+        "solar_006"
+      ],
+      "id_semantico": [
+        "solar_006",
+        "solar_003",
+        "almacenamiento_008"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.3333333333333333,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cuáles son las partes principales de un aerogenerador eólico?",
+      "id_esperado": "eolica_000",
+      "tipo": "facil",
+      "id_clave": [
+        "eolica_000",
+        "hidraulica_003",
+        "hidraulica_004"
+      ],
+      "id_semantico": [
+        "eolica_000",
+        "eolica_001",
+        "eolica_007"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cómo se instalan molinos de viento sobre el mar sin fijarlos al fondo marino?",
+      "id_esperado": "eolica_002",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_007",
+        "eolica_000",
+        "eolica_002"
+      ],
+      "id_semantico": [
+        "eolica_002",
+        "eolica_001",
+        "eolica_003"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.3333333333333333,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué consecuencias tiene para los animales y el paisaje construir molinos de viento?",
+      "id_esperado": "eolica_003",
+      "tipo": "dificil",
+      "id_clave": [
+        "hidraulica_003",
+        "hidraulica_004",
+        "almacenamiento_000"
+      ],
+      "id_semantico": [
+        "eolica_003",
+        "eolica_001",
+        "hidraulica_002"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Merece la pena económicamente invertir dinero en parques de molinos de viento?",
+      "id_esperado": "eolica_006",
+      "tipo": "dificil",
+      "id_clave": [
+        "eolica_002",
+        "eolica_005",
+        "transicion_energetica_000"
+      ],
+      "id_semantico": [
+        "eolica_006",
+        "eolica_001",
+        "eolica_003"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cómo se genera la energía hidráulica mediante turbinas?",
+      "id_esperado": "hidraulica_000",
+      "tipo": "facil",
+      "id_clave": [
+        "hidraulica_000",
+        "eolica_000",
+        "eolica_003"
+      ],
+      "id_semantico": [
+        "hidraulica_004",
+        "hidraulica_000",
+        "hidraulica_007"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 0,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 0.5
+    },
+    {
+      "pregunta": "¿Qué consecuencias negativas tiene construir una presa para los ríos y los peces?",
+      "id_esperado": "hidraulica_002",
+      "tipo": "dificil",
+      "id_clave": [
+        "hidraulica_003",
+        "hidraulica_004",
+        "hidraulica_005"
+      ],
+      "id_semantico": [
+        "hidraulica_002",
+        "hidraulica_008",
+        "petroleo_gas_000"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué tipos de maquinaria giratoria se usan dentro de una presa para producir electricidad?",
+      "id_esperado": "hidraulica_004",
+      "tipo": "dificil",
+      "id_clave": [
+        "almacenamiento_002",
+        "solar_007",
+        "eolica_004"
+      ],
+      "id_semantico": [
+        "hidraulica_004",
+        "hidraulica_001",
+        "eolica_000"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Por qué resulta tan buena opción generar luz aprovechando el agua embalsada?",
+      "id_esperado": "hidraulica_005",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_007",
+        "hidraulica_000",
+        "hidraulica_001"
+      ],
+      "id_semantico": [
+        "hidraulica_005",
+        "solar_004",
+        "hidraulica_000"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué sistemas existen para almacenar energía eléctrica?",
+      "id_esperado": "almacenamiento_000",
+      "tipo": "facil",
+      "id_clave": [
+        "hidraulica_001",
+        "hidraulica_005",
+        "hidraulica_006"
+      ],
+      "id_semantico": [
+        "almacenamiento_000",
+        "redes_electricas_006",
+        "solar_002"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cómo guardan el calor las plantas termosolares para seguir produciendo luz de noche?",
+      "id_esperado": "almacenamiento_002",
+      "tipo": "dificil",
+      "id_clave": [
+        "almacenamiento_000",
+        "almacenamiento_002",
+        "solar_007"
+      ],
+      "id_semantico": [
+        "almacenamiento_002",
+        "solar_002",
+        "solar_008"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.5,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué nuevas formas de guardar electricidad aparecerán en los próximos años?",
+      "id_esperado": "almacenamiento_004",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_000",
+        "solar_002",
+        "solar_003"
+      ],
+      "id_semantico": [
+        "almacenamiento_004",
+        "almacenamiento_005",
+        "transicion_energetica_003"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cuánto cuesta hoy en día instalar baterías para guardar electricidad y bajará ese precio con el tiempo?",
+      "id_esperado": "almacenamiento_005",
+      "tipo": "dificil",
+      "id_clave": [
+        "redes_electricas_006",
+        "transicion_energetica_004",
+        "solar_001"
+      ],
+      "id_semantico": [
+        "almacenamiento_005",
+        "solar_002",
+        "almacenamiento_004"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué son las redes eléctricas inteligentes o smart grids?",
+      "id_esperado": "redes_electricas_000",
+      "tipo": "facil",
+      "id_clave": [
+        "almacenamiento_000",
+        "transicion_energetica_007",
+        "hidraulica_001"
+      ],
+      "id_semantico": [
+        "redes_electricas_000",
+        "eolica_005",
+        "redes_electricas_004"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué aparato se usa para subir o bajar el voltaje antes de que la luz llegue a las casas?",
+      "id_esperado": "redes_electricas_001",
+      "tipo": "dificil",
+      "id_clave": [
+        "hidraulica_000",
+        "redes_electricas_001",
+        "petroleo_gas_001"
+      ],
+      "id_semantico": [
+        "redes_electricas_001",
+        "redes_electricas_002",
+        "redes_electricas_005"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.5,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué son las instalaciones pequeñas que pueden generar y usar su propia luz sin depender de la red general?",
+      "id_esperado": "redes_electricas_004",
+      "tipo": "dificil",
+      "id_clave": [
+        "redes_electricas_001",
+        "transicion_energetica_001",
+        "hidraulica_000"
+      ],
+      "id_semantico": [
+        "solar_004",
+        "redes_electricas_004",
+        "solar_006"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 0,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 0.5
+    },
+    {
+      "pregunta": "¿Cómo detecta el sistema eléctrico cuándo hay un problema y corta la corriente automáticamente?",
+      "id_esperado": "redes_electricas_005",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_001",
+        "eolica_000",
+        "almacenamiento_002"
+      ],
+      "id_semantico": [
+        "redes_electricas_005",
+        "redes_electricas_000",
+        "eolica_005"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué impacto ambiental tiene la extracción de petróleo y gas natural?",
+      "id_esperado": "petroleo_gas_000",
+      "tipo": "facil",
+      "id_clave": [
+        "petroleo_gas_000",
+        "transicion_energetica_005",
+        "solar_007"
+      ],
+      "id_semantico": [
+        "petroleo_gas_000",
+        "petroleo_gas_001",
+        "hidraulica_002"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Cómo se rompe la roca subterránea para sacar gas que está atrapado dentro?",
+      "id_esperado": "petroleo_gas_001",
+      "tipo": "dificil",
+      "id_clave": [
+        "petroleo_gas_001",
+        "solar_007",
+        "petroleo_gas_002"
+      ],
+      "id_semantico": [
+        "petroleo_gas_001",
+        "petroleo_gas_000",
+        "petroleo_gas_002"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Quién decide cuánto va a costar un barril de crudo en el mundo?",
+      "id_esperado": "petroleo_gas_005",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_001",
+        "eolica_000",
+        "hidraulica_000"
+      ],
+      "id_semantico": [
+        "petroleo_gas_005",
+        "petroleo_gas_006",
+        "petroleo_gas_002"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué organización de países productores pone límites a cuánto petróleo se saca cada mes?",
+      "id_esperado": "petroleo_gas_006",
+      "tipo": "dificil",
+      "id_clave": [
+        "petroleo_gas_006",
+        "hidraulica_003",
+        "transicion_energetica_008"
+      ],
+      "id_semantico": [
+        "petroleo_gas_006",
+        "petroleo_gas_005",
+        "petroleo_gas_002"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué es la transición energética y qué objetivos persigue?",
+      "id_esperado": "transicion_energetica_000",
+      "tipo": "facil",
+      "id_clave": [
+        "transicion_energetica_000",
+        "industria_eficiencia_006",
+        "transicion_energetica_003"
+      ],
+      "id_semantico": [
+        "transicion_energetica_000",
+        "transicion_energetica_005",
+        "transicion_energetica_006"
+      ],
+      "recall@1_clave": 1,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 1.0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Por qué es tan importante poder guardar electricidad para que las fuentes limpias sustituyan del todo a las sucias?",
+      "id_esperado": "transicion_energetica_003",
+      "tipo": "dificil",
+      "id_clave": [
+        "hidraulica_004",
+        "transicion_energetica_001",
+        "eolica_000"
+      ],
+      "id_semantico": [
+        "almacenamiento_003",
+        "redes_electricas_006",
+        "transicion_energetica_003"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 0,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 0.3333333333333333
+    },
+    {
+      "pregunta": "¿Qué combustible limpio se fabrica separando el agua en sus componentes usando electricidad renovable?",
+      "id_esperado": "transicion_energetica_004",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_007",
+        "transicion_energetica_004",
+        "hidraulica_000"
+      ],
+      "id_semantico": [
+        "transicion_energetica_004",
+        "hidraulica_000",
+        "transicion_energetica_001"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.5,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué papel tienen los coches que funcionan con batería en reducir la contaminación del transporte?",
+      "id_esperado": "transicion_energetica_007",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_003",
+        "solar_000",
+        "redes_electricas_001"
+      ],
+      "id_semantico": [
+        "transicion_energetica_007",
+        "almacenamiento_007",
+        "transicion_energetica_006"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿De dónde sale el dinero necesario para pagar todo el cambio hacia energías limpias?",
+      "id_esperado": "transicion_energetica_008",
+      "tipo": "dificil",
+      "id_clave": [
+        "transicion_energetica_000",
+        "transicion_energetica_008",
+        "solar_007"
+      ],
+      "id_semantico": [
+        "transicion_energetica_008",
+        "transicion_energetica_005",
+        "industria_eficiencia_008"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.5,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué es la eficiencia energética en la industria?",
+      "id_esperado": "industria_eficiencia_000",
+      "tipo": "facil",
+      "id_clave": [
+        "transicion_energetica_000",
+        "transicion_energetica_006",
+        "industria_eficiencia_000"
+      ],
+      "id_semantico": [
+        "industria_eficiencia_000",
+        "industria_eficiencia_002",
+        "transicion_energetica_006"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 1,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0.3333333333333333,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿De qué manera ahorrar energía mejora las ganancias de una fábrica?",
+      "id_esperado": "industria_eficiencia_002",
+      "tipo": "dificil",
+      "id_clave": [
+        "eolica_000",
+        "hidraulica_000",
+        "hidraulica_001"
+      ],
+      "id_semantico": [
+        "industria_eficiencia_002",
+        "industria_eficiencia_000",
+        "transicion_energetica_006"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué avances tecnológicos están cambiando el modo en que las fábricas gastan menos energía?",
+      "id_esperado": "industria_eficiencia_003",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_000",
+        "hidraulica_000",
+        "hidraulica_001"
+      ],
+      "id_semantico": [
+        "industria_eficiencia_003",
+        "transicion_energetica_006",
+        "industria_eficiencia_000"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué pasos hay que seguir para certificar una empresa bajo la norma ISO 50001?",
+      "id_esperado": "industria_eficiencia_005",
+      "tipo": "dificil",
+      "id_clave": [
+        "solar_007",
+        "hidraulica_002",
+        "hidraulica_003"
+      ],
+      "id_semantico": [
+        "industria_eficiencia_005",
+        "solar_006",
+        "industria_eficiencia_004"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 1,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 1.0
+    },
+    {
+      "pregunta": "¿Qué datos se usan para medir si una planta industrial está consumiendo energía de forma eficiente?",
+      "id_esperado": "industria_eficiencia_007",
+      "tipo": "dificil",
+      "id_clave": [
+        "hidraulica_006",
+        "solar_007",
+        "hidraulica_003"
+      ],
+      "id_semantico": [
+        "industria_eficiencia_001",
+        "industria_eficiencia_007",
+        "industria_eficiencia_000"
+      ],
+      "recall@1_clave": 0,
+      "recall@1_semantico": 0,
+      "recall@3_clave": 0,
+      "recall@3_semantico": 1,
+      "mrr@k_clave": 0,
+      "mrr@k_semantico": 0.5
+    }
+  ],
+  "promedios_pregunta_respuesta": {
+    "global": {
+      "re1_clave": 0.22857142857142856,
+      "re1_semantico": 0.8857142857142857,
+      "re3_clave": 0.42857142857142855,
+      "re3_semantico": 1.0,
+      "mrr_clave": 0.31428571428571433,
+      "mrr_semantico": 0.938095238095238
+    },
+    "facil": {
+      "re1_clave": 0.6666666666666666,
+      "re1_semantico": 0.8888888888888888,
+      "re3_clave": 0.7777777777777778,
+      "re3_semantico": 1.0,
+      "mrr_clave": 0.7037037037037037,
+      "mrr_semantico": 0.9444444444444444
+    },
+    "dificil": {
+      "re1_clave": 0.07692307692307693,
+      "re1_semantico": 0.8846153846153846,
+      "re3_clave": 0.3076923076923077,
+      "re3_semantico": 1.0,
+      "mrr_clave": 0.17948717948717946,
+      "mrr_semantico": 0.9358974358974359
+    }
+  }
+}
