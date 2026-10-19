@@ -1,6 +1,6 @@
-# Buscador semántico en español, con evaluación
+# Buscador semántico en español, con evaluación y RAG
 
-Compara un buscador semántico (embeddings + ChromaDB) contra un baseline por palabras clave sobre un corpus propio de textos sobre energía en español, midiendo cuánto mejora realmente la búsqueda semántica con Recall@1, Recall@3 y MRR.
+Compara un buscador semántico (embeddings + ChromaDB) contra un baseline por palabras clave sobre un corpus propio de textos sobre energía en español, midiendo cuánto mejora realmente la búsqueda semántica con Recall@1, Recall@3 y MRR. Después, se implementa un sistema RAG
 
 ## Captura de ejemplo
 
@@ -128,13 +128,82 @@ Cinco preguntas donde incluso el mejor modo semántico (pregunta+respuesta) fall
 
 **Patrón general**: la mayoría de los fallos no son por "no entender" la pregunta, sino por **falta de granularidad entre documentos muy próximos temáticamente**, dentro de la misma categoría o en categorías vecinas con solapamiento real de contenido.
 
-## Decisiones y límites
+
+# Implementación RAG
+Una vez implementado y evaluado el sistema de recuperación semántica, el siguiente paso consiste en utilizar los documentos recuperados para generar respuestas fundamentadas en sus contenidos mediante un modelo de lenguaje (LLM).
+
+## Arquitectura e implementación
+Se incorpora RAG.py, que integra el buscador semántico desarrollado previamente con la API de Anthropic.
+
+El flujo de generación sigue estos pasos:
+
+Recuperación: se obtiene el top-k de documentos más similares a la pregunta mediante el buscador semántico.
+
+Filtrado por similitud: se comprueba si el mejor resultado supera un umbral configurable. Si no se recuperan documentos o la similitud máxima queda por debajo del umbral, el sistema se abstiene de generar una respuesta.
+
+Construcción del contexto: se concatenan los textos recuperados junto con sus identificadores.
+
+Generación: se envían la pregunta y el contexto a Claude Haiku, indicándole que responda exclusivamente a partir de la información proporcionada y que identifique las fuentes utilizadas.
+
+Este diseño incorpora un mecanismo inicial de abstención para reducir el riesgo de responder cuando la recuperación no aporta suficiente evidencia. Sin embargo, superar el umbral de similitud no garantiza por sí solo que los documentos recuperados contengan información suficiente para responder correctamente.
+
+## Evaluación de la fundamentación 
+Para analizar la fiabilidad de las respuestas se desarrolla evaluar_rag.py, que incorpora un evaluador basado en un segundo modelo de lenguaje (LLM-as-a-judge).
+
+La función juez recibe la pregunta original, la respuesta generada y los documentos recuperados, y clasifica la respuesta en tres categorías:
+
+fundamentada: la respuesta está respaldada por los documentos fuente.
+
+parcialmente_fundamentada: solo una parte de la respuesta está respaldada por las fuentes.
+
+no_fundamentada: la respuesta no cuenta con respaldo suficiente o presenta información que no se puede justificar con los documentos.
+
+La evaluación se realiza sobre dos conjuntos de preguntas:
+
+35 preguntas del dominio: preguntas utilizadas previamente para evaluar la recuperación semántica.
+
+8 preguntas fuera de dominio: consultas sobre temas distintos al corpus energético, diseñadas para comprobar si el sistema evita producir respuestas sin respaldo documental.
+
+Los resultados se almacenan en data/resultados_evaluacion_rag.json, con el detalle de cada pregunta, la respuesta generada, el veredicto del evaluador y el origen de la consulta. Además, resumen_rag agrupa los veredictos por conjunto de preguntas para facilitar el análisis.
+
+El evaluador constituye una aproximación automatizada a la fundamentación de las respuestas, no una garantía de ausencia de alucinaciones. Sus propios veredictos también pueden contener errores y deben interpretarse teniendo en cuenta esta limitación.
+
+
+## Decisiones y límites buscador semántico.
 
 - **Modelo de embeddings**: `voyage-4-lite`, con tier gratuito de 200M tokens — más que suficiente para este corpus.
 - **Coste**: Se han pagado 5 dolares para generar el corupus utilizando la API de Anthropic.
 - **Los textos del corpus y las preguntas de prueba salen hacia una API externa** (Voyage AI) para generar embeddings. No se envía ningún dato personal, solo el contenido del corpus generado.
 - **El corpus es sintético**, generado con un LLM (ver atribución abajo) y revisado manualmente antes de su uso.
 - **El baseline de palabras clave es intencionadamente simple** un baseline más sofisticado  probablemente reduciría algo la brecha frente al buscador semántico, pero no la eliminaría en los casos sin vocabulario compartido.
+
+## Análisis de errores y decisiones de diseño RAG.
+
+-**Similitud semántica frente a relevancia real**
+
+Durante la evaluación con preguntas fuera de dominio se detectó un caso especialmente interesante:
+
+Pregunta: «¿Es Rusia el país más grande del mundo?»
+
+Aunque la pregunta no pertenece al dominio del corpus, la similitud máxima superó el umbral configurado de 0,3. Esto ocurrió porque uno de los documentos recuperados, petroleo_gas_002, compartía suficiente proximidad semántica superficial con la consulta para superar el filtro, pese a no contener información pertinente para responderla.
+
+Este caso pone de manifiesto una limitación del sistema de recuperación: una puntuación de similitud elevada no implica necesariamente que el documento contenga evidencia útil para responder a la pregunta.
+
+En la prueba observada, Claude se abstuvo de responder y explicó que los documentos disponibles no aportaban información suficiente. El evaluador clasificó el resultado como no_fundamentada, al no existir una respuesta factual respaldada por las fuentes.
+
+Desde el punto de vista funcional, abstenerse fue un comportamiento deseable. Este caso evidencia la necesidad de distinguir entre la fundamentación de una respuesta y la decisión de responder o abstenerse.
+
+-**Variabilidad en la generación**
+
+Durante las pruebas se observó que la respuesta generada para la consulta sobre Rusia podía variar entre ejecuciones. Esto indica que el comportamiento del sistema no debe evaluarse a partir de un único ejemplo.
+
+Para caracterizar su comportamiento sería conveniente repetir las pruebas con los mismos parámetros, registrar las respuestas obtenidas y medir la frecuencia con la que el sistema responde, se abstiene o produce información sin respaldo.
+
+- **Limitaciones del evaluador automático**
+
+La clasificación de respuestas mediante un segundo LLM permite automatizar parte del análisis, pero introduce una nueva fuente de incertidumbre: el propio evaluador puede interpretar incorrectamente la relación entre la respuesta y los documentos fuente.
+
+Por ello, los resultados del juez deben entenderse como estimaciones de fundamentación, no como una verificación definitiva de la ausencia de alucinaciones.
 
 ## Licencia y atribución
 
