@@ -97,7 +97,7 @@ Categorías disponibles: `solar`, `eolica`, `hidraulica`, `almacenamiento`, `red
 **Desglose por dificultad de la pregunta** (9 preguntas "fáciles", comparten palabras con la respuesta; 26 "difíciles", reformuladas sin vocabulario literal compartido):
 
 | Método | Recall@1 (fácil) | Recall@1 (difícil) | Recall@3 (fácil) | Recall@3 (díficil) | MRR (fácil) | MRR (difícil)
-|---|---|---|---|---|---||---|---|
+|---|---|---|---|---|---|---|---|
 | Palabras clave | 0.667 | 0.077 | 0.778 | 0.308 | 0.704 |0.179 
 | Semántico (solo pregunta) | 0.889 | 0.538 |  1  | 0.846 | 0.944 | 0.686
 | Semántico (pregunta + respuesta) | 0.889 | 0.885 | 1 | 1 | 0.944 | 0.936
@@ -138,7 +138,7 @@ Cinco preguntas donde incluso el mejor modo semántico (pregunta+respuesta) fall
 
 ## Licencia y atribución
 
-
+- Código bajo licencia MIT (ver archivo LICENSE
 - El corpus (`data/documentos.json`) fue generado con un modelo de lenguaje (Claude, vía API de Anthropic) a partir de prompts sobre el sector energético, y revisado manualmente antes de su uso en este proyecto. Fuente declarada en cada documento como `generado_LLM_revisado`.
 - Las preguntas de prueba (`data/preguntas_prueba.json`) fueron generadas con asistencia de IA a partir del corpus, revisadas y ajustadas manualmente.
 
