@@ -44,6 +44,11 @@ buscador.py ──► buscar(pregunta, k, categoria) ──► resultados ordena
       │
       ▼
 cli.py ──► búsqueda interactiva por consola
+      │
+      ▼
+rag.py ──► recuperación de respuestas + fuentes
+
+
 ```
 
 En paralelo, `baseline.py` implementa un buscador por solapamiento de palabras clave con la misma firma y estructura de salida que `buscar()`, y `evaluar.py` calcula Recall@1, Recall@3 y MRR para ambos sobre un conjunto de 35 preguntas de prueba (`data/preguntas_prueba.json`).
@@ -165,6 +170,12 @@ La evaluación se realiza sobre dos conjuntos de preguntas:
 8 preguntas fuera de dominio: consultas sobre temas distintos al corpus energético, diseñadas para comprobar si el sistema evita producir respuestas sin respaldo documental.
 
 Los resultados se almacenan en data/resultados_evaluacion_rag.json, con el detalle de cada pregunta, la respuesta generada, el veredicto del evaluador y el origen de la consulta. Además, resumen_rag agrupa los veredictos por conjunto de preguntas para facilitar el análisis.
+A continuación, se muestra una tabla con los resultados obtenidos en la última ejecución:
+
+| Conjunto | Fundamentada | Parcialmente fundamentada| No fundamentada |
+|---|---|---|---|
+|35 preguntas dominio| 34 | 1 | 0 |
+|8 preguntas fuera del dominio| 0 | 0 | 0 |
 
 El evaluador constituye una aproximación automatizada a la fundamentación de las respuestas, no una garantía de ausencia de alucinaciones. Sus propios veredictos también pueden contener errores y deben interpretarse teniendo en cuenta esta limitación.
 
@@ -179,7 +190,7 @@ El evaluador constituye una aproximación automatizada a la fundamentación de l
 
 ## Análisis de errores y decisiones de diseño RAG.
 
--**Similitud semántica frente a relevancia real**
+### Similitud semántica frente a relevancia real
 
 Durante la evaluación con preguntas fuera de dominio se detectó un caso especialmente interesante:
 
@@ -193,13 +204,13 @@ En la prueba observada, Claude se abstuvo de responder y explicó que los docume
 
 Desde el punto de vista funcional, abstenerse fue un comportamiento deseable. Este caso evidencia la necesidad de distinguir entre la fundamentación de una respuesta y la decisión de responder o abstenerse.
 
--**Variabilidad en la generación**
+### Variabilidad en la generación
 
 Durante las pruebas se observó que la respuesta generada para la consulta sobre Rusia podía variar entre ejecuciones. Esto indica que el comportamiento del sistema no debe evaluarse a partir de un único ejemplo.
 
 Para caracterizar su comportamiento sería conveniente repetir las pruebas con los mismos parámetros, registrar las respuestas obtenidas y medir la frecuencia con la que el sistema responde, se abstiene o produce información sin respaldo.
 
-- **Limitaciones del evaluador automático**
+ ### Limitaciones del evaluador automático
 
 La clasificación de respuestas mediante un segundo LLM permite automatizar parte del análisis, pero introduce una nueva fuente de incertidumbre: el propio evaluador puede interpretar incorrectamente la relación entre la respuesta y los documentos fuente.
 
@@ -214,4 +225,4 @@ Por ello, los resultados del juez deben entenderse como estimaciones de fundamen
 ## Mejoras futuras
 
 - Comparación con un modelo de embeddings open-source ejecutado localmente.
-- Este repositorio será la base del sistema RAG de la siguiente fase del proyecto.
+
