@@ -4,7 +4,7 @@
     "respuesta": "Las celdas de silicio monocristalino alcanzan eficiencias del 22-23%, mientras que las tecnologías emergentes como perovskitas y células tándem superan el 30%. Los paneles comerciales típicos operan entre 18-21% de rendimiento. La eficiencia depende de factores como irradiancia solar, temperatura de operación y ángulo de incidencia. Los sistemas de seguimiento solar (trackers) optimizan la captación hasta 25-35% adicional comparado con estructuras fijas, mejorando significativamente el retorno de inversión en proyectos de gran escala.",
     "id": "solar_000",
     "categoria": "solar",
-    "fuente": "generado_LLM_revisado",
+    "fuente": "editado_manual",
     "año": 2026
   },
   {
@@ -27,14 +27,6 @@
     "pregunta": "¿Cuál es la vida útil de los paneles solares fotovoltaicos?",
     "respuesta": "Los paneles solares modernos tienen garantía de rendimiento de 25-30 años, con degradación típica del 0.5-0.8% anual. Después de 25 años mantienen 80-85% de capacidad nominal. La vida útil técnica puede extenderse a 40-50 años con mantenimiento preventivo. Factores que afectan longevidad incluyen radiación ultravioleta, ciclos térmicos, humedad y calidad de encapsulantes. Los estándares IEC 61215 y 61730 regulan resistencia a degradación, delaminación y corrosión. Al final de vida, estos módulos son reciclables en 95%, recuperando silicio, vidrio y metales preciosos.",
     "id": "solar_003",
-    "categoria": "solar",
-    "fuente": "generado_LLM_revisado",
-    "año": 2026
-  },
-  {
-    "pregunta": "¿Qué ventajas ofrece la energía solar en zonas rurales?",
-    "respuesta": "La energía solar proporciona autonomía energética descentralizada en comunidades rurales sin acceso a infraestructura de red. Los sistemas fotovoltaicos aislados (off-grid) minimizan costos de distribución versus plantas convencionales. Facilitan electrificación de viviendas, sistemas de riego, purificación de agua y telecomunicaciones. Reducen emisiones de carbono versus generadores diésel. Combinados con baterías, garantizan suministro nocturno y durante períodos nublados. Requieren inversión inicial moderada con operación de bajo mantenimiento. Programas de microcrédito y subsidios gubernamentales mejoran accesibilidad económica en regiones emergentes.",
-    "id": "solar_004",
     "categoria": "solar",
     "fuente": "generado_LLM_revisado",
     "año": 2026
@@ -573,6 +565,22 @@
     "id": "industria_eficiencia_008",
     "categoria": "industria_eficiencia",
     "fuente": "generado_LLM_revisado",
+    "año": 2026
+  },
+  {
+    "id": "solar_009",
+    "pregunta": "¿Qué es una pregunta de prueba?",
+    "respuesta": "Esto es una respuesta de prueba para validar el endpoint.",
+    "categoria": "solar",
+    "fuente": "prueba_manual",
+    "año": 2026
+  },
+  {
+    "id": "solar_010",
+    "pregunta": "¿Otra pregunta de prueba distinta?",
+    "respuesta": "Otra respuesta de prueba distinta.",
+    "categoria": "solar",
+    "fuente": "prueba_manual",
     "año": 2026
   }
 ]
