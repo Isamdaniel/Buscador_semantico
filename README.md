@@ -216,6 +216,54 @@ La clasificación de respuestas mediante un segundo LLM permite automatizar part
 
 Por ello, los resultados del juez deben entenderse como estimaciones de fundamentación, no como una verificación definitiva de la ausencia de alucinaciones.
 
+
+## API REST (FastAPI)
+
+Además del CLI, el proyecto expone una API REST sobre `API.py`, con operaciones CRUD completas sobre el corpus y acceso a la búsqueda semántica y al RAG vía HTTP.
+
+### Arrancar la API
+
+```bash
+python -m uvicorn API:app --reload
+```
+
+Documentación interactiva (Swagger) disponible en `http://127.0.0.1:8000/docs`.
+
+### Endpoints
+
+| Método | Ruta | Descripción |
+|---|---|---|
+| `GET` | `/documentos` | Lista todos los documentos del corpus |
+| `GET` | `/documentos/buscar` | Filtra documentos por cualquier combinación de campos (pregunta, respuesta, id, categoria, fuente, año), combinados con AND |
+| `POST` | `/documentos` | Crea un documento nuevo: genera su id, su embedding (modo pregunta+respuesta), lo ingesta en Chroma y actualiza `documentos.json` |
+| `PUT` | `/documentos/{id}` | Actualiza un documento existente de forma parcial; solo regenera el embedding si cambió la pregunta o la respuesta |
+| `DELETE` | `/documentos/{id}` | Elimina un documento de Chroma y del corpus; devuelve 404 si el id no existe |
+| `POST` | `/documentos/buscador` | Búsqueda semántica (equivalente a `buscar()` del CLI) |
+| `POST` | `/documentos/RAG` | Genera una respuesta con RAG, citando las fuentes usadas |
+
+### Ejemplo de uso
+
+Todos los endpoints pueden probarse directamente desde la documentación interactiva en `http://127.0.0.1:8000/docs`, sin necesidad de escribir código cliente. Por ejemplo, para crear un documento nuevo desde `/docs`, se abre `POST /documentos` y se envía un body como:
+
+```json
+{
+  "pregunta": "¿Qué es el autoconsumo solar?",
+  "respuesta": "...",
+  "categoria": "solar",
+  "fuente": "manual",
+  "año": 2026
+}
+```
+
+El mismo patrón aplica al resto de endpoints (`POST /documentos/buscador`, `POST /documentos/RAG`, `PUT /documentos/{id}`, `DELETE /documentos/{id}`): se completa el formulario que genera Swagger a partir del modelo Pydantic de cada uno y se ejecuta la petición con el botón "Try it out".
+
+### Decisión de diseño: regeneración de embeddings en `Update`
+
+El endpoint `PUT` solo vuelve a calcular el embedding del documento (con la correspondiente llamada a Voyage AI) cuando `pregunta` o `respuesta` cambian. Si solo se actualiza un metadato (`categoria`, `fuente`, `año`), el vector existente se conserva sin tocar — evita llamadas innecesarias a la API y acelera las actualizaciones que no afectan al contenido semántico del documento.
+
+### Generación de ids tras borrados
+
+El endpoint `POST` genera el id del nuevo documento buscando el número más alto ya usado dentro de esa categoría (no contando cuántos documentos quedan), evitando colisiones de id cuando se ha borrado algún documento intermedio de esa categoría previamente.
 ## Licencia y atribución
 
 - Código bajo licencia MIT (ver archivo LICENSE
